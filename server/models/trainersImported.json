@@ -1,0 +1,1378 @@
+{
+    "version": "1.0",
+    "encoding": "UTF-8",
+    "feed": {
+      "xmlns": "http://www.w3.org/2005/Atom",
+      "xmlns$openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+      "xmlns$gsx": "http://schemas.google.com/spreadsheets/2006/extended",
+      "id": {
+        "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values"
+      },
+      "updated": {
+        "$t": "2020-12-14T21:10:21.892Z"
+      },
+      "category": [
+        {
+          "scheme": "http://schemas.google.com/spreadsheets/2006",
+          "term": "http://schemas.google.com/spreadsheets/2006#list"
+        }
+      ],
+      "title": {
+        "type": "text",
+        "$t": "Sheet1"
+      },
+      "link": [
+        {
+          "rel": "alternate",
+          "type": "application/atom+xml",
+          "href": "https://docs.google.com/spreadsheets/u/0/d/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/pubhtml"
+        },
+        {
+          "rel": "http://schemas.google.com/g/2005#feed",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values"
+        },
+        {
+          "rel": "http://schemas.google.com/g/2005#post",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values"
+        },
+        {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values?alt=json"
+        }
+      ],
+      "author": [
+        {
+          "name": {
+            "$t": "bukolar.omojowo"
+          },
+          "email": {
+            "$t": "bukolar.omojowo@gmail.com"
+          }
+        }
+      ],
+      "openSearch$totalResults": {
+        "$t": "25"
+      },
+      "openSearch$startIndex": {
+        "$t": "1"
+      },
+      "entry": [
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cokwr"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "1"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 25/11/2020, shoename: Singles Day, shoebrand: Air Jordan, shoetype: Air Jordan 6, tags: Black, Burgundy, Jordan, 6"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cokwr"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "1"
+          },
+          "gsx$releasedate": {
+            "$t": "25/11/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Singles Day"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 6"
+          },
+          "gsx$tags": {
+            "$t": "Black, Burgundy, Jordan, 6"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cpzh4"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "2"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 28/11/2020, shoename: Fire Red, shoebrand: Air Jordan, shoetype: Air Jordan 4, tags: White, Fire Red, Black, Tech Grey, Grey, 4"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cpzh4"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "2"
+          },
+          "gsx$releasedate": {
+            "$t": "28/11/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Fire Red"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 4"
+          },
+          "gsx$tags": {
+            "$t": "White, Fire Red, Black, Tech Grey, Grey, 4"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cre1l"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "3"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 30/11/2020, shoename: Metallic Gold, shoebrand: Air Jordan, shoetype: Air Jordan 1, tags: Black, Metallic, Gold, Shiny, 1"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cre1l"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "3"
+          },
+          "gsx$releasedate": {
+            "$t": "30/11/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Metallic Gold"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 1"
+          },
+          "gsx$tags": {
+            "$t": "Black, Metallic, Gold, Shiny, 1"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/chk2m"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "4"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 01/02/2020, shoename: Super Bowl LIV, shoebrand: Air Jordan, shoetype: Air Jordan 10, tags: Wheat Brown, Multi Colour, Pink, Cream, White, 10"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/chk2m"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "4"
+          },
+          "gsx$releasedate": {
+            "$t": "01/02/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Super Bowl LIV"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 10"
+          },
+          "gsx$tags": {
+            "$t": "Wheat Brown, Multi Colour, Pink, Cream, White, 10"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/ciyn3"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "5"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 08/02/2020, shoename: Varsity Red, shoebrand: Air Jordan, shoetype: Air Jordan 1 Retro Hi 85, tags: Varsity Red, Red, Summit White, White, Black, 1"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/ciyn3"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "5"
+          },
+          "gsx$releasedate": {
+            "$t": "08/02/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Varsity Red"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 1 Retro Hi 85"
+          },
+          "gsx$tags": {
+            "$t": "Varsity Red, Red, Summit White, White, Black, 1"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/ckd7g"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "6"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 13/02/2020, shoename: NC To CHI, shoebrand: Air Jordan , shoetype: Air Jordan 1 Retro High OG, tags: Black, Blue, Red, White, 1"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/ckd7g"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "6"
+          },
+          "gsx$releasedate": {
+            "$t": "13/02/2020"
+          },
+          "gsx$shoename": {
+            "$t": "NC To CHI"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan "
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 1 Retro High OG"
+          },
+          "gsx$tags": {
+            "$t": "Black, Blue, Red, White, 1"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/clrrx"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "7"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 4/12/2020, shoename: Burgundy, shoebrand: Air Jordan, shoetype: Air Jordan 8, tags: White, Grey, Burgundy, Black, 8"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/clrrx"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "7"
+          },
+          "gsx$releasedate": {
+            "$t": "4/12/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Burgundy"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 8"
+          },
+          "gsx$tags": {
+            "$t": "White, Grey, Burgundy, Black, 8"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cyevm"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "8"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 5/12/2020, shoename: Univeristy Blue, shoebrand: Air Jordan, shoetype: Air Jordan 9, tags: White, Black, Blue, University Blue, 9"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cyevm"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "8"
+          },
+          "gsx$releasedate": {
+            "$t": "5/12/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Univeristy Blue"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 9"
+          },
+          "gsx$tags": {
+            "$t": "White, Black, Blue, University Blue, 9"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cztg3"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "9"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 8/12/20, shoename: J Balvin x Air Jordan 1, shoebrand: Air Jordan, shoetype: Air Jordan 1, tags: Mutil-Color, Multi, Black, Pink Foam, Pink, 1"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cztg3"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "9"
+          },
+          "gsx$releasedate": {
+            "$t": "8/12/20"
+          },
+          "gsx$shoename": {
+            "$t": "J Balvin x Air Jordan 1"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 1"
+          },
+          "gsx$tags": {
+            "$t": "Mutil-Color, Multi, Black, Pink Foam, Pink, 1"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d180g"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "10"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 12/12/20, shoename: Jubilee, shoebrand: Air Jordan , shoetype: Air Jordan 11, tags: Black, Clear, White, Metallic Silver, Metallic, Silver, 11"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d180g"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "10"
+          },
+          "gsx$releasedate": {
+            "$t": "12/12/20"
+          },
+          "gsx$shoename": {
+            "$t": "Jubilee"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan "
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 11"
+          },
+          "gsx$tags": {
+            "$t": "Black, Clear, White, Metallic Silver, Metallic, Silver, 11"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d2mkx"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "11"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 19/12/20, shoename: Hyper Royal, shoebrand: Air Jordan, shoetype: Air Jordan 13, tags: Black, Blue, 13"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d2mkx"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "11"
+          },
+          "gsx$releasedate": {
+            "$t": "19/12/20"
+          },
+          "gsx$shoename": {
+            "$t": "Hyper Royal"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 13"
+          },
+          "gsx$tags": {
+            "$t": "Black, Blue, 13"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cssly"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "12"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 26/12/20, shoename: Reverse Flu Game, shoebrand: Air Jordan, shoetype: Air Jordan 12, tags: Varsity Red, Black, Red, 12"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cssly"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "12"
+          },
+          "gsx$releasedate": {
+            "$t": "26/12/20"
+          },
+          "gsx$shoename": {
+            "$t": "Reverse Flu Game"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 12"
+          },
+          "gsx$tags": {
+            "$t": "Varsity Red, Black, Red, 12"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cu76f"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "13"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 30/12/20, shoename: Jordan 11 Adapt, shoebrand: Air Jordan , shoetype: Air Jordan 11 , tags: White, Black, Clear, Orange, Adpat, 11, Grey"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cu76f"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "13"
+          },
+          "gsx$releasedate": {
+            "$t": "30/12/20"
+          },
+          "gsx$shoename": {
+            "$t": "Jordan 11 Adapt"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan "
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 11 "
+          },
+          "gsx$tags": {
+            "$t": "White, Black, Clear, Orange, Adpat, 11, Grey"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cvlqs"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "14"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 15/02/2020, shoename: Unite, shoebrand: Air Jordan, shoetype: Air Jordan 3 Retro SE, tags: White, Fire Red, Red, Black, Cement, Grey, 1"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cvlqs"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "14"
+          },
+          "gsx$releasedate": {
+            "$t": "15/02/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Unite"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 3 Retro SE"
+          },
+          "gsx$tags": {
+            "$t": "White, Fire Red, Red, Black, Cement, Grey, 1"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cx0b9"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "15"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 22/02/2020, shoename: Milan, shoebrand: Air Jordan, shoetype: Air Jordan 1 Mid, tags: Sail, Light Bone, String Shimmer, Pink, Peach, White"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/cx0b9"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "15"
+          },
+          "gsx$releasedate": {
+            "$t": "22/02/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Milan"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 1 Mid"
+          },
+          "gsx$tags": {
+            "$t": "Sail, Light Bone, String Shimmer, Pink, Peach, White"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d9ney"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "16"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 21/03/2020, shoename: Neon, shoebrand: Air Jordan, shoetype: Air Jordan 4 Retro SE, tags: Cool Grey, Volt Wolf, Grey, Green, Neon, Black, 4"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d9ney"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "16"
+          },
+          "gsx$releasedate": {
+            "$t": "21/03/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Neon"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 4 Retro SE"
+          },
+          "gsx$tags": {
+            "$t": "Cool Grey, Volt Wolf, Grey, Green, Neon, Black, 4"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/db1zf"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "17"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 11//04/2020, shoename: Court Purple, shoebrand: Air Jordan, shoetype: Air Jordan 1 Retro High OG, tags: Purple, Black, White, 1"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/db1zf"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "17"
+          },
+          "gsx$releasedate": {
+            "$t": "11//04/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Court Purple"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 1 Retro High OG"
+          },
+          "gsx$tags": {
+            "$t": "Purple, Black, White, 1"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/dcgjs"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "18"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 18/04/2020, shoename: DMP, shoebrand: Air Jordan, shoetype: Air Jordan 6, tags: Black, Black Metallic Gold, 6"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/dcgjs"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "18"
+          },
+          "gsx$releasedate": {
+            "$t": "18/04/2020"
+          },
+          "gsx$shoename": {
+            "$t": "DMP"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 6"
+          },
+          "gsx$tags": {
+            "$t": "Black, Black Metallic Gold, 6"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/ddv49"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "19"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 26/ /09/2020, shoename: Dark Mocha, shoebrand: Air Jordan, shoetype: Air Jordan 10, tags: Dark, Mocha, Brown, Black, Red, 10"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/ddv49"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "19"
+          },
+          "gsx$releasedate": {
+            "$t": "26/ /09/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Dark Mocha"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 10"
+          },
+          "gsx$tags": {
+            "$t": "Dark, Mocha, Brown, Black, Red, 10"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d415a"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "20"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 11/01/2020, shoename: Reverse He Got Game, shoebrand: Air Jordan, shoetype: Air Jordan 13, tags: Black, Gym Red, White, 13"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d415a"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "20"
+          },
+          "gsx$releasedate": {
+            "$t": "11/01/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Reverse He Got Game"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 13"
+          },
+          "gsx$tags": {
+            "$t": "Black, Gym Red, White, 13"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d5fpr"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "21"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 18/01/2020, shoename: Black Satin, shoebrand: Air Jordan, shoetype: Air Jordan 1 Retro High OG, tags: Black, Metallic, Silver, Gym Red, Red, 1"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d5fpr"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "21"
+          },
+          "gsx$releasedate": {
+            "$t": "18/01/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Black Satin"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 1 Retro High OG"
+          },
+          "gsx$tags": {
+            "$t": "Black, Metallic, Silver, Gym Red, Red, 1"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d6ua4"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "22"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 22/01/2020, shoename: Black Cat, shoebrand: Air Jordan, shoetype: Air Jordan 4, tags: Black, Black, 4"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d6ua4"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "22"
+          },
+          "gsx$releasedate": {
+            "$t": "22/01/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Black Cat"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 4"
+          },
+          "gsx$tags": {
+            "$t": "Black, Black, 4"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d88ul"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "23"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 23/01/2020, shoename: Chinese New Year, shoebrand: Air Jordan, shoetype: Air Jordan 13, tags: Cool Grey, Grey, Wolf Grey, Grey, Platinum, Pink,Gold, 13"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/d88ul"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "23"
+          },
+          "gsx$releasedate": {
+            "$t": "23/01/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Chinese New Year"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 13"
+          },
+          "gsx$tags": {
+            "$t": "Cool Grey, Grey, Wolf Grey, Grey, Platinum, Pink,Gold, 13"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/dkvya"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "24"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 25/01/2020, shoename: Racer Blue, shoebrand: Air Jordan, shoetype: Air Jordan 9, tags: Blue, Racer Blue, Black, White, Dark Blue, 9"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/dkvya"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "24"
+          },
+          "gsx$releasedate": {
+            "$t": "25/01/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Racer Blue"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 9"
+          },
+          "gsx$tags": {
+            "$t": "Blue, Racer Blue, Black, White, Dark Blue, 9"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/dmair"
+          },
+          "updated": {
+            "$t": "2020-12-14T21:10:21.892Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "25"
+          },
+          "content": {
+            "type": "text",
+            "$t": "releasedate: 30/01/2020, shoename: Oil Grey, shoebrand: Air Jordan, shoetype: Air Jordan 5 Retro, tags: Oil Grey, Purple, BLue, Black, White, 5"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1xKXGL3hVIhjKKBD5szW43FNiCq1n3LOzi8BO9rm1iVE/od6/public/values/dmair"
+            }
+          ],
+          "gsx$shoeid": {
+            "$t": "25"
+          },
+          "gsx$releasedate": {
+            "$t": "30/01/2020"
+          },
+          "gsx$shoename": {
+            "$t": "Oil Grey"
+          },
+          "gsx$shoebrand": {
+            "$t": "Air Jordan"
+          },
+          "gsx$shoetype": {
+            "$t": "Air Jordan 5 Retro"
+          },
+          "gsx$tags": {
+            "$t": "Oil Grey, Purple, BLue, Black, White, 5"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

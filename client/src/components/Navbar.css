@@ -1,0 +1,9 @@
+.link {
+  color: white;
+  font-weight: bolder;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: red;
+}

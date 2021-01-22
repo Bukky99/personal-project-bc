@@ -1,0 +1,32 @@
+[ {
+        "name" : "Singles Day",
+        "model" : "Air Jordan 6",
+        "brand" : "Air Jordan",
+        "releaseDate": "2020-11-25",
+        "imageLink": "https://sneakernews.com/wp-content/uploads/2019/08/jordan-6-singles-day-DB9818-001-2.jpg?w=1140", 
+        "website": ["https://www.nike.com/gb/launch/t/womens-air-jordan-6-singles-day", "https://stockx.com/air-jordan-6-retro-sd-triple-black-w"],
+        "retailPrice": {
+            "amount":165,
+            "currencyCode": "GBP"
+        },
+        "tags": ["Black, Burgundy, Jordan, 6, Air Jordan 6, Air Jordan"]
+        
+ 
+    
+  }, {
+    
+        "name" : "Recraft Triple White",
+        "Model" : "Nike Air MAx 95",
+        "brand" : "Nike",
+        "releaseDate": "2020-12-23",
+        "imageLink": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/2804e6ce-d413-43de-a768-58c75a4aa3a1/air-max-95-recraft-older-shoe-RgfjVZ.jpg", 
+        "website": ["https://www.nike.com/gb/t/air-max-95-recraft-older-shoe-RgfjVZ/CJ3906-100?CP=EUNS_AFF_AWIN_UK_125701_TheSoleSupplier_169845&utm_source=TheSoleSupplier&utm_medium=affiliate&utm_campaign=125701&utm_content=169845&awc=16327_1609777988_c575bf01bf55b6facbd4760970d3b7e4"],
+        "retailPrice": {
+            "amount":100,
+            "currencyCode": "GBP"
+            },
+        "tags": ["White, Triple White, Nike, 95, Air Make 95"]
+
+
+    }
+]
