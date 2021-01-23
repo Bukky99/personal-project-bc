@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 //import data from "./models/trainers.json";
 import "./App.css";
-import Navbar from "./Components/Navbar";
+import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 //import Trainer from "./Components/Trainer";
 import WishList from "./Pages/WishList";
-import Search from "./Components/Search";
+import Search from "./components/Search";
 import Login from "./Pages/Login";
 
 // SERVICES

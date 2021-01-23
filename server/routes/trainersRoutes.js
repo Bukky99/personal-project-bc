@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Trainer = mongoose.model("seasonal-releases");
+const Trainer = mongoose.model("trainers");
 //console.log(Trainer.find());
 //const querystring = require("querystring");
 //const url = "http://localhost:3000/api/trainers?q=jordan";

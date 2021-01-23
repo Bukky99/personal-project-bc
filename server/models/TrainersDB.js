@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const seasonalShoeSchema = new Schema({
+const trainersSchema = new Schema({
   name: {
     type: String,
   },
@@ -34,4 +34,4 @@ const seasonalShoeSchema = new Schema({
   },
 });
 
-mongoose.model("seasonal-releases", seasonalShoeSchema);
+mongoose.model("trainers", trainersSchema);
