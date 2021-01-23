@@ -82,9 +82,7 @@ const Search = () => {
           <img className="shoeImg" src={shoe.imageLink} alt="a shoe" />
           <p>Release Date: {shoe.releaseDate}</p>
           <p>Brand: {shoe.brand}</p>
-          <p>
-            Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}
-          </p>
+          <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
           <button
             className="addBtn"
             id={shoe._id}
