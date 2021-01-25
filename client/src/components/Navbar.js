@@ -6,13 +6,13 @@ const Navbar = (props) => {
   return (
     <div className="navbar navbar-dark bg-dark">
       <Link className="link" to="/">
-        Home{" "}
+        Home
       </Link>
       {/* <Link className="link" to="/about">
         About
       </Link> */}
       <Link className="link" to="/wishList">
-        My WishList{" "}
+        My WishList
       </Link>
       <Link className="link" to="/sneakerSearch">
         Sneaker Search

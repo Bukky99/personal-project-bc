@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./WishList.css";
 import axios from "axios";
-//import {Form, Button, Card} from "react-bootstrap";
+import {Form, Button, Card} from "react-bootstrap";
+import NotificationSystem from "react-notification-system";
 
 const WishList = () => {
   const [foundShoes, setFoundShoes] = useState([]);
-  
-
+  const notificationSystem = useRef();
   //object tracking two fields, username & description
   const [input, setInput] = useState({
     email: "",
@@ -53,6 +53,13 @@ const WishList = () => {
     //update component state
     setFoundShoes(filteredShoes);
 
+    //FIX THIS
+    const notification = notificationSystem.current;
+    notification.addNotification({
+      message: `${filteredShoes.name} was removed from your wishlist`,
+      level: 'success'
+    });
+
   }
 
   
@@ -61,58 +68,57 @@ const WishList = () => {
 
       <div>
         {foundShoes.map(list => (
-          <div className="shoeInfo" key={list._id}>
-            <h1 className="shoeName">{list.name}</h1>
-            <img className="shoeImg" src={list.imageLink} alt="a shoe" />
-            <p>Release Date: {list.releaseDate}</p>
-            <p>Brand: {list.brand}</p>
-            <p>Price: {list.retailPrice.currencyCode} {list.retailPrice.amount}</p>
-            <button
-            className="removeBtn"
-            id={list._id}
-            type="button"
-            onClick={handleRemove}
-          >
-            Remove
-          </button>
-          </div>
-        ))}
-      </div>
-      
+          <Card className="shoeInfo" style={{ width: '18rem' }} key={list._id}>
+          <Card.Img variant="top" src={list.imageLink} />
+          <Card.Body>
+            <Card.Title>{list.name}</Card.Title>
+            <Card.Text>
+                  <p>Release Date: {list.releaseDate}</p>
+                  <p>Brand: {list.brand}</p>
+                  <p>Price: {list.retailPrice.currencyCode} {list.retailPrice.amount}</p>
+            </Card.Text>
+            <Button variant="primary" onClick={handleRemove} id={list._id}>Remove </Button>
+          </Card.Body>
+        </Card>
+            ))}
+              <NotificationSystem ref={notificationSystem} />
+          </div>      
       <div>
-        <label>
+        <label className="formTitle">
           <b>Request sneakers you would like to get more information about:</b>
         </label>
-        <form>
-          <div className="form-group">
-            <input
-              onChange={handleChange}
-              name="email"
-              value={input.email}
-              autoComplete="off"
-              className="form-control"
-              placeholder="Email"
-            ></input>
+        <Form>
+          <Form.Group controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control 
+            onChange={handleChange}
+            name="email"
+            type="email" 
+            value={input.email} 
+            placeholder="Enter email" />
+            <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+            </Form.Text>
+          </Form.Group>
 
-          </div>
+          <Form.Group controledId="formBasicDescription">
+            <Form.Label>Sneaker Name/Sneaker Description </Form.Label>
+            <Form.Control
+            onChange={handleChange}
+            name="description" 
+            type="description" 
+            value={input.description}
+            placeholder="Enter a sneaker name or description of a sneaker" />
+          </Form.Group>
 
-          {/*User can request to get more info from a shoe if not on the website which will send into database*/}
-          {/*User sends form which is attached to thier account*/}
-          <div className="form-group">
-            <textarea
-              onChange={handleChange}
-              name="description"
-              value={input.description}
-              autoComplete="off"
-              className="form-control"
-              placeholder="Sneaker Name/Sneaker Description"
-            ></textarea>
-          </div>
-
-          <button onClick={handleClick} className="btn btn-lg btn-info">
-            Request Sneaker Info{" "}
-          </button>
-        </form>
+          <Form.Group controlId="formBasicCheckBox">
+            <Form.Check type="checkbox" label="Tick to subscribe to monthly sneaker release alerts" />
+          </Form.Group>
+          <Button onClick={handleClick} variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+        
       </div>
     
     </div>

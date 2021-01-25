@@ -1,11 +1,9 @@
-.WishListTitle {
-  background-color: red;
-  text-align: center;
-  position: fixed;
-  top: 6px;
-  right: 6px;
+.formTitle {
+  text-decoration: underline;
 }
 
+
+/* 
 .shoeImg {
   height: 200px;
   width: 200px;
@@ -25,5 +23,5 @@
   padding: 2px 16px;
   margin-bottom: 25px;
   margin-top: 25px;
-}
+} */
 
