@@ -7,7 +7,7 @@ const Search = () => {
   const [query, setQuery] = useState("");
 
   const [shoes, setShoes] = useState([]);
-  const [message, setMessage] = useState("Testing!");
+  const [message, setMessage] = useState("");
 
   const fetchData = async () => {
     const apiUrl = `http://localhost:3000/api/trainer?q=${query}`;
@@ -28,29 +28,29 @@ const Search = () => {
 
   const handleAdd = (event) => {
     //console.log(event.target.id);
-    let foundShoe = shoes.find((shoe) => event.target.id === shoe._id);
+    let foundShoes = shoes.find((shoe) => event.target.id === shoe._id);
     //console.log(shoes.find((shoe) => event.target.id === shoe._id));
 
     //local storage variable
     const myStorage = window.localStorage;
 
     //get data from local stoarge and set to array
-    let foundShoeArray = JSON.parse(myStorage.getItem("wishList"));
-    if (foundShoeArray === null) {
-      foundShoeArray = [];
+    let foundShoesArray = JSON.parse(myStorage.getItem("wishList"));
+    if (foundShoesArray === null) {
+      foundShoesArray = [];
     }
 
     //set foundShoeArray(value) to wishList(key)
-    myStorage.setItem("wishList", JSON.stringify(foundShoeArray));
+    myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
 
     //store item in array
-    foundShoeArray.push(foundShoe);
+    foundShoesArray.push(foundShoes);
 
   
-    myStorage.setItem("wishList", JSON.stringify(foundShoeArray));
+    myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
-    console.log(foundShoeArray);
+    //console.log(foundShoeArray);
 
   
   };

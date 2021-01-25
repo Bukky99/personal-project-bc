@@ -1,7 +1,13 @@
 .homeTitle {
-  position: fixed;
-  top: 50%;
+  width: 400px;
+  min-height: 500px;
+  height: 50px;
+  top: 50px;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
+  position: absolute;
+  transform: translateX(-50%);
+  text-shadow: -3px -3px 3px #fff7,
+                3px 3px 3px #0003;
+  /*box-shadow: 10px 10px 13px*/
+  color: black
 }

@@ -8,18 +8,18 @@ const Navbar = (props) => {
       <Link className="link" to="/">
         Home{" "}
       </Link>
-      <Link className="link" to="/about">
+      {/* <Link className="link" to="/about">
         About
-      </Link>
+      </Link> */}
       <Link className="link" to="/wishList">
         My WishList{" "}
       </Link>
       <Link className="link" to="/sneakerSearch">
         Sneaker Search
       </Link>
-      <Link className="link" to="/login">
+      {/* <Link className="link" to="/login">
         Login
-      </Link>
+      </Link> */}
     </div>
   );
 };

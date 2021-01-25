@@ -5,3 +5,25 @@
   top: 6px;
   right: 6px;
 }
+
+.shoeImg {
+  height: 200px;
+  width: 200px;
+}
+
+.shoeName {
+  text-decoration: underline;
+}
+
+.shoeInfo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  float: left;
+  display: inline;
+  width: 49%;
+  padding: 2px 16px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+

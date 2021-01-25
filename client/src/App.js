@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-//import data from "./models/trainers.json";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-//import Trainer from "./Components/Trainer";
+
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
 import Login from "./Pages/Login";
@@ -13,8 +13,8 @@ import Login from "./Pages/Login";
 // SERVICES
 
 const App = () => {
-  const [name, setName] = useState("Bukky");
-  const [shoes, setShoes] = useState(null);
+  // const [name, setName] = useState("Bukky");
+  // const [shoes, setShoes] = useState(null);
 
   return (
     <BrowserRouter>
@@ -30,14 +30,14 @@ const App = () => {
         )}
       />
 
-      <Route
+      {/* <Route
         path="/about"
         render={() => (
           <React.Fragment>
             <About />
           </React.Fragment>
         )}
-      />
+      /> */}
 
       <Route
         path="/wishList"
