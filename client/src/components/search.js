@@ -2,6 +2,7 @@
 import "./Search.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import {Card, Button } from "react-bootstrap";
 
 const Search = () => {
   const [query, setQuery] = useState("");
@@ -77,22 +78,19 @@ const Search = () => {
       {/* Displays data from API */}
 
       {shoes.map((shoe) => (
-        <div className="shoeInfo" key={shoe._id}>
-          <h1 className="shoeName">{shoe.name}</h1>
-          <img className="shoeImg" src={shoe.imageLink} alt="a shoe" />
-          <p>Release Date: {shoe.releaseDate}</p>
-          <p>Brand: {shoe.brand}</p>
-          <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
-          <button
-            className="addBtn"
-            id={shoe._id}
-            type="button"
-            onClick={handleAdd}
-          >
-            Add
-          </button>
-        </div>
-      ))}
+        <Card className="shoeInfo" style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="holder.js/100px" />
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of
+            the card's content.
+          </Card.Text>
+          <Button variant="primary">Add </Button>
+        </Card.Body>
+      </Card>)
+        
+      )}
     </div>
   );
 };
