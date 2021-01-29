@@ -23,7 +23,8 @@ const WishList = () => {
       };
     });
   }
-
+//onclick remove info from input
+//add notification when form is submitted
   function handleClick(event) {
     event.preventDefault();
     const newRequest = {

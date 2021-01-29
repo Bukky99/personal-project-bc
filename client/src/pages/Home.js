@@ -1,13 +1,14 @@
 import React from "react";
 import "./Home.css";
-
 import { Link } from "react-router-dom";
+//import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer} from "mdbreact";
 
 const Home = () => {
   return (
     <div className="container">
-      <Link className="link" to="/sneakerSearch">
       <h1 className="homeTitle">Find Your Sneakers!</h1>
+      <Link className="link" to="/sneakerSearch">
+      <h3 className="homeSubTitle">Click <em>here</em> to start your search</h3>
       </Link>
       
     </div>

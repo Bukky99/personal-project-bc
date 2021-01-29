@@ -9,5 +9,18 @@
   text-shadow: -3px -3px 3px #fff7,
                 3px 3px 3px #0003;
   /*box-shadow: 10px 10px 13px*/
-  color: black
+  color: black;
+  text-decoration: underline;
+}
+
+.homeSubTitle {
+  position:static;
+  height: 50px;
+  top: 50px;
+  left: 40%;
+  color: black;
+  margin-top: 5%;
+  transform: translateX(30%);
+  text-shadow: -3px -3px 3px #fff7,
+                3px 3px 3px #0003;
 }

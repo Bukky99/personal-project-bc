@@ -3,6 +3,7 @@ import "./Search.css";
 import axios from "axios";
 import React, { useEffect, useState, useRef } from "react";
 import {Card, Button } from "react-bootstrap";
+import {MDBInput, MDBCol} from "mdbreact"
 import NotificationSystem from "react-notification-system";
 
 
@@ -12,12 +13,12 @@ const Search = () => {
   const [message, setMessage] = useState("");
   const notificationSystem = useRef();
 
-  const fetchData = async () => {
-    const apiUrl = `http://localhost:3000/api/trainer?q=${query}`;
-    const response = await axios.get(apiUrl);
-    setMessage(response.data.message);
-    setShoes(response.data.shoes);
-  };
+  // const fetchData = async () => {
+  //   const apiUrl = `http://localhost:3000/api/trainer?q=${query}`;
+  //   const response = await axios.get(apiUrl);
+  //   setMessage(response.data.message);
+  //   setShoes(response.data.shoes);
+  // };
 
   //console.log(query);
   const handleChange = async (event) => {
@@ -76,15 +77,19 @@ const Search = () => {
         <label className="shoe-search">Search for your Sneaker:</label>
         {/* Fetch data from API */}
         <i className="fas fa-search" />
-        <input
-          className="searchBar"
+        <MDBCol md="6" className="searchBar">
+          <MDBInput 
+          hint="Search" 
+          type="text"
           type="search"
+          containerClass="mt-0"
           name="query"
           value={query}
           id="shoe-search"
-          placeholder="Search..."
-          onChange={handleChange}
-        ></input>
+          placeholder="Serach..."
+          onChange={handleChange} />
+        </MDBCol>
+      
        
         <p>{message}</p>
       </div>
@@ -98,7 +103,9 @@ const Search = () => {
       <Card.Text>
             <p>Release Date: {shoe.releaseDate}</p>
             <p>Brand: {shoe.brand}</p>
+            <p>Model: {shoe.model} </p>
             <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
+            
       </Card.Text>
       <Button variant="primary" onClick={handleAdd} id={shoe._id}>Add </Button>
     </Card.Body>

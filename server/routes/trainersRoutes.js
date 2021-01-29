@@ -8,7 +8,8 @@ module.exports = (app) => {
   app.get("/api/trainer", async (req, res) => {
     const query = req.query.q;
     console.log("Q =", query);
-    const result = await Trainer.find({ tags: {$regex : query }});
+    const result = await Trainer.find({ tags: {$all: query.split(/\s+/)}});
+    console.log(query.split(/\s+/))
     console.log(result);
     res.json({
       message: "Here are your searched sneakers...",
@@ -16,5 +17,3 @@ module.exports = (app) => {
     });
   });
 };
-
-/\s+/
