@@ -25,6 +25,7 @@ const App = () => {
         render={() => (
           <React.Fragment>
             <Home />
+            <HomeCarousel />
             {/* <HomeCarousel /> */}
           </React.Fragment>
         )}

@@ -3,7 +3,6 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 
 const HomeCarousel = () => {
     return (
-        <div>
             <MDBContainer>
           <MDBCarousel
           activeItem={1}
@@ -58,7 +57,7 @@ const HomeCarousel = () => {
             </MDBCarouselInner>
           </MDBCarousel>
         </MDBContainer>
-        </div>
+        
     );
 };
 
