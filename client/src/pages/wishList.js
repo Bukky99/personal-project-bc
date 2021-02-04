@@ -6,6 +6,8 @@ import NotificationSystem from "react-notification-system";
 
 const WishList = () => {
   const [foundShoes, setFoundShoes] = useState([]);
+  const [email, setEmail] = useState("");
+  const [description, setDescription] = useState("");
   const notificationSystem = useRef();
   //object tracking two fields, username & description
   const [input, setInput] = useState({
@@ -24,14 +26,22 @@ const WishList = () => {
     });
   }
 //onclick remove info from input
-//add notification when form is submitted
   function handleClick(event) {
+    // event.formBasicEmail.reset()
     event.preventDefault();
+    setEmail("");
+    setDescription("");
     const newRequest = {
       email: input.email,
       description: input.description,
     };
     axios.post("http://localhost:5000/api/request", newRequest);
+
+    const requestNotification = notificationSystem.current;
+      requestNotification.addNotification({
+      message: `Your request has been submitted`,
+      level: 'success'
+    });
   }
 
   useEffect(() => {
@@ -54,10 +64,11 @@ const WishList = () => {
     //update component state
     setFoundShoes(filteredShoes);
 
-    //FIX THIS
+    
+    let deletedShoe = wishList.find(shoe => event.target.id === shoe._id);
     const notification = notificationSystem.current;
     notification.addNotification({
-      message: `${filteredShoes.name} was removed from your wishlist`,
+      message: `${deletedShoe.name} was removed from your wishlist`,
       level: 'success'
     });
 

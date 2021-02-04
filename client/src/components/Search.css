@@ -1,8 +1,13 @@
-label {
-  display: block;
-  font: 1rem "Fira Sans", sans-serif;
+.searchMessage {
+  padding-left: 10%;
 }
 
+
+
+.searchBar {
+  padding: 40px;
+  ;
+}
 input,
 label {
   margin: 0.4rem 0;
@@ -18,8 +23,7 @@ label {
 }
 
 .shoeInfoHolder{
-margin-left: auto;
-margin-right: auto;
+  padding-left: 10%;
 }
 
 .shoeInfo {
@@ -31,6 +35,7 @@ margin-right: auto;
   width: 49%;
   padding: 2px 16px;
   margin: 10px;
+  padding-left: 10px;
   
 }
 

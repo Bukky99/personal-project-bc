@@ -74,27 +74,29 @@ const Search = () => {
     <div>
       <div className="container">
         
-        <label className="shoe-search">Search for your Sneaker:</label>
+        
         {/* Fetch data from API */}
-        <i className="fas fa-search" />
+        {/* <i className="fas fa-search" /> */}
         <MDBCol md="6" className="searchBar">
+        <label>Search for your Sneaker:</label>
           <MDBInput 
           hint="Search" 
           type="text"
           type="search"
-          containerClass="mt-0"
+          containerClass="mt-10"
           name="query"
           value={query}
           id="shoe-search"
-          placeholder="Serach..."
+          placeholder="Search..."
           onChange={handleChange} />
         </MDBCol>
       
        
-        <p>{message}</p>
+        
       </div>
       {/* Displays data from API */}
-
+      <div className="shoeInfoHolder">
+      {/* <p className="searchMessage">{message}</p> */}
       {shoes.map((shoe) => (
     <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
     <Card.Img variant="top" src={shoe.imageLink} />
@@ -111,6 +113,7 @@ const Search = () => {
     </Card.Body>
   </Card>
       ))}
+      </div>
         <NotificationSystem ref={notificationSystem} />
     </div>
   );

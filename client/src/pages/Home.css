@@ -1,9 +1,6 @@
 .homeTitle {
   width: 100%;
   text-align: center;
-  text-shadow: -3px -3px 3px #fff7,
-                3px 3px 3px #0003;
-  /*box-shadow: 10px 10px 13px*/
   color: black;
   text-decoration: underline;
 }
@@ -12,6 +9,5 @@
   width: 100%;
   text-align: center;
   color: black;
-  text-shadow: -3px -3px 3px #fff7,
-                3px 3px 3px #0003;
+  
 }

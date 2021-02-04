@@ -7,8 +7,6 @@ import About from "./Pages/About";
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
 import Login from "./Pages/Login";
-import HomeCarousel from "./Pages/HomeCarousel"
-//import { MDBCarouselCaption } from "mdbreact";
 
 // SERVICES
 
@@ -25,8 +23,7 @@ const App = () => {
         render={() => (
           <React.Fragment>
             <Home />
-            <HomeCarousel />
-            {/* <HomeCarousel /> */}
+            
           </React.Fragment>
         )}
       />

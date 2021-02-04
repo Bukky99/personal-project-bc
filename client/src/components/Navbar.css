@@ -1,9 +1,19 @@
 .link {
-  color: white;
+  color: black;
   font-weight: bolder;
 }
 
 .link:hover {
   text-decoration: none;
   color: red;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: grey;
+  display: flex;
+  align-items: flex-end;
+  background-color: lightgrey;
 }
