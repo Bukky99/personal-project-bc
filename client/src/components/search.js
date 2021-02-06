@@ -33,6 +33,9 @@ const Search = () => {
   const handleAdd = (event) => {
     //console.log(event.target.id);
     let foundShoes = shoes.find((shoe) => event.target.id === shoe._id);
+    if (foundShoes === null) {
+      foundShoes = event.target.id
+    }
     //console.log(shoes.find((shoe) => event.target.id === shoe._id));
 
     //local storage variable
@@ -51,7 +54,7 @@ const Search = () => {
     //store item in array
     foundShoesArray.push(foundShoes);
 
-  
+  debugger
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
     //console.log(foundShoeArray);
@@ -59,10 +62,12 @@ const Search = () => {
     console.log(notificationSystem)
     console.log(notificationSystem.current)
     
+    debugger
     const notification = notificationSystem.current;
     notification.addNotification({
       message: `${foundShoes.name} was added to your wishlist`,
       level: 'success'
+      
     });
   
   };
@@ -78,7 +83,7 @@ const Search = () => {
         {/* Fetch data from API */}
         {/* <i className="fas fa-search" /> */}
         <MDBCol md="6" className="searchBar">
-        <label>Search for your Sneaker:</label>
+        <label><b>Search for your Sneaker:</b></label>
           <MDBInput 
           hint="Search" 
           type="text"
@@ -96,23 +101,24 @@ const Search = () => {
       </div>
       {/* Displays data from API */}
       <div className="shoeInfoHolder">
-      {/* <p className="searchMessage">{message}</p> */}
-      {shoes.map((shoe) => (
-    <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
-    <Card.Img variant="top" src={shoe.imageLink} />
-    <Card.Body>
-      <Card.Title>{shoe.name}</Card.Title>
-      <Card.Text>
-            <p>Release Date: {shoe.releaseDate}</p>
-            <p>Brand: {shoe.brand}</p>
-            <p>Model: {shoe.model} </p>
-            <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
-            
-      </Card.Text>
-      <Button variant="primary" onClick={handleAdd} id={shoe._id}>Add </Button>
-    </Card.Body>
-  </Card>
-      ))}
+        {/* <p className="searchMessage">{message}</p> */}
+        {shoes.map((shoe) => (
+        <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
+        <Card.Img variant="top" src={shoe.imageLink} />
+          <Card.Body>
+            <Card.Title>{shoe.name}</Card.Title>
+            <Card.Text>
+                  <p>Release Date: {shoe.releaseDate}</p>
+                  <p>Brand: {shoe.brand}</p>
+                  <p>Model: {shoe.model} </p>
+                  <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
+                  
+            </Card.Text>
+            <Button className="addBtn" variant="secondary" onClick={handleAdd} id={shoe._id}>
+            <i class="fas fa-heart" style={{ color: "red" }}></i> </Button>
+          </Card.Body>
+        </Card>
+        ))}
       </div>
         <NotificationSystem ref={notificationSystem} />
     </div>

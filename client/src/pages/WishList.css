@@ -5,7 +5,16 @@
 }
 
 
-/* .addedShoes {
+.border {
   border: black;
-  border-radius: 30%;
-} */
+  border-radius: 10px;
+  border-top: 30px solid;
+  padding: 20px;
+  border-width: 20%;
+  background-color: #d3d3d3;
+}
+
+.subBtn {
+  background-color:black;
+  
+}

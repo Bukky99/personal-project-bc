@@ -24,6 +24,7 @@ label {
 
 .shoeInfoHolder{
   padding-left: 10%;
+  
 }
 
 .shoeInfo {
@@ -36,7 +37,8 @@ label {
   padding: 2px 16px;
   margin: 10px;
   padding-left: 10px;
-  
+  border: black;
+  border-radius: 30px;
 }
 
 /* .fas fa-search {

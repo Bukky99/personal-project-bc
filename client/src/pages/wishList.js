@@ -47,7 +47,7 @@ const WishList = () => {
   useEffect(() => {
     const myStorage = window.localStorage;
     const wishList = myStorage.getItem("wishList");
-   
+   debugger
     setFoundShoes(wishList === null ? [] : JSON.parse(wishList))
     console.log(foundShoes);
   }, []);
@@ -58,13 +58,14 @@ const WishList = () => {
 
     let filteredShoes = wishList.filter(shoe => event.target.id !== shoe._id);
    
+    debugger
     //persit to local stoarge
     myStorage.setItem("wishList", JSON.stringify(filteredShoes))
 
     //update component state
     setFoundShoes(filteredShoes);
 
-    
+    debugger
     let deletedShoe = wishList.find(shoe => event.target.id === shoe._id);
     const notification = notificationSystem.current;
     notification.addNotification({
@@ -77,8 +78,8 @@ const WishList = () => {
   
   return (
     <div className="container">  
-
-      <div>
+      <div className="">
+    
         {foundShoes.map(list => (
           <Card className="shoeInfo" style={{ width: '18rem' }} key={list._id}>
           <Card.Img variant="top" src={list.imageLink} />
@@ -89,7 +90,10 @@ const WishList = () => {
                   <p>Brand: {list.brand}</p>
                   <p>Price: {list.retailPrice.currencyCode} {list.retailPrice.amount}</p>
             </Card.Text>
-            <Button variant="primary" onClick={handleRemove} id={list._id}>Remove </Button>
+            <Button variant="primary" onClick={handleRemove} id={list._id}>
+              
+            <i class="fas fa-trash-alt"></i>
+               </Button>
           </Card.Body>
         </Card>
             ))}
@@ -97,9 +101,12 @@ const WishList = () => {
           </div>      
       <div>
         <label className="formTitle">
+          <b></b>
+        </label>
+        <Form className="border">
+        <label className="formTitle">
           <b>Request sneakers you would like to get more information about:</b>
         </label>
-        <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control 
@@ -126,8 +133,8 @@ const WishList = () => {
           <Form.Group controlId="formBasicCheckBox">
             <Form.Check type="checkbox" label="Tick to subscribe to monthly sneaker release alerts" />
           </Form.Group>
-          <Button onClick={handleClick} variant="primary" type="submit">
-            Submit
+          <Button className="subBtn"onClick={handleClick} variant="primary" type="submit">
+            <b>Submit</b>
           </Button>
         </Form>
         

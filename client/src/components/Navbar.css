@@ -1,19 +1,20 @@
 .link {
   color: black;
   font-weight: bolder;
+  padding: 80px;
+  width: 100%;
 }
 
 .link:hover {
   text-decoration: none;
   color: red;
+  border: darkgray;
 }
 
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: grey;
-  display: flex;
-  align-items: flex-end;
-  background-color: lightgrey;
+.navBar {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #d3d3d3;
+  height: 70px;
 }
