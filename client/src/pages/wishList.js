@@ -42,12 +42,12 @@ const WishList = () => {
       message: `Your request has been submitted`,
       level: 'success'
     });
-  }
+  } 
 
   useEffect(() => {
     const myStorage = window.localStorage;
     const wishList = myStorage.getItem("wishList");
-   debugger
+   
     setFoundShoes(wishList === null ? [] : JSON.parse(wishList))
     console.log(foundShoes);
   }, []);
@@ -58,14 +58,14 @@ const WishList = () => {
 
     let filteredShoes = wishList.filter(shoe => event.target.id !== shoe._id);
    
-    debugger
+    
     //persit to local stoarge
     myStorage.setItem("wishList", JSON.stringify(filteredShoes))
 
     //update component state
     setFoundShoes(filteredShoes);
 
-    debugger
+    
     let deletedShoe = wishList.find(shoe => event.target.id === shoe._id);
     const notification = notificationSystem.current;
     notification.addNotification({

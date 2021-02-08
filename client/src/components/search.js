@@ -30,14 +30,16 @@ const Search = () => {
     setShoes(response.data.shoes);
   };
 
+   
   const handleAdd = (event) => {
     //console.log(event.target.id);
     let foundShoes = shoes.find((shoe) => event.target.id === shoe._id);
-    if (foundShoes === null) {
-      foundShoes = event.target.id
-    }
+    // if (foundShoes === null) {
+    //   foundShoes = event.target.id
+    // }
     //console.log(shoes.find((shoe) => event.target.id === shoe._id));
 
+  
     //local storage variable
     const myStorage = window.localStorage;
 
@@ -54,7 +56,7 @@ const Search = () => {
     //store item in array
     foundShoesArray.push(foundShoes);
 
-  debugger
+
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
     //console.log(foundShoeArray);
@@ -62,7 +64,7 @@ const Search = () => {
     console.log(notificationSystem)
     console.log(notificationSystem.current)
     
-    debugger
+  
     const notification = notificationSystem.current;
     notification.addNotification({
       message: `${foundShoes.name} was added to your wishlist`,
@@ -115,7 +117,7 @@ const Search = () => {
                   
             </Card.Text>
             <Button className="addBtn" variant="secondary" onClick={handleAdd} id={shoe._id}>
-            <i class="fas fa-heart" style={{ color: "red" }}></i> </Button>
+            <i class="fas fa-heart" style={{ color: "red", pointerEvents: "none" }}></i> </Button>
           </Card.Body>
         </Card>
         ))}
