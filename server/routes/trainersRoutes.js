@@ -23,8 +23,6 @@ module.exports = (app) => {
     res.json({
       message: "Your random sneaker",
       shoe: randomSearch
-
-      
     });
     
   });

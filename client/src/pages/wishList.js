@@ -47,7 +47,7 @@ const WishList = () => {
   useEffect(() => {
     const myStorage = window.localStorage;
     const wishList = myStorage.getItem("wishList");
-   
+    
     setFoundShoes(wishList === null ? [] : JSON.parse(wishList))
     console.log(foundShoes);
   }, []);
@@ -90,9 +90,9 @@ const WishList = () => {
                   <p>Brand: {list.brand}</p>
                   <p>Price: {list.retailPrice.currencyCode} {list.retailPrice.amount}</p>
             </Card.Text>
-            <Button variant="secondary" onClick={handleRemove} id={list._id}>
+            <Button variant="light" onClick={handleRemove} id={list._id}>
               
-            <i class="fas fa-times" style={{ color: "red", pointerEvents: "none" }}></i>
+            <i class="fas fa-times fa-2x" style={{ color: "red", pointerEvents: "none" }}></i>
                </Button>
           </Card.Body>
         </Card>

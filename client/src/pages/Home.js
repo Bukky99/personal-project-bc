@@ -11,7 +11,7 @@ const Home = () => {
       </Link>
 
       <div>
-        <h2>Latest Releases</h2>
+        <h2 className="latestReleasesTitle">Latest Releases</h2>
       </div>
      
       

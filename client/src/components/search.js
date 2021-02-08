@@ -28,6 +28,7 @@ const Search = () => {
     const response = await axios.get(apiUrl);
     setMessage(response.data.message);
     setShoes(response.data.shoes);
+    console.log(response.data.shoes)
   };
 
    
@@ -110,14 +111,15 @@ const Search = () => {
           <Card.Body>
             <Card.Title>{shoe.name}</Card.Title>
             <Card.Text>
+              
                   <p>Release Date: {shoe.releaseDate}</p>
                   <p>Brand: {shoe.brand}</p>
                   <p>Model: {shoe.model} </p>
                   <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
                   
             </Card.Text>
-            <Button className="addBtn" variant="secondary" onClick={handleAdd} id={shoe._id}>
-            <i class="fas fa-heart" style={{ color: "red", pointerEvents: "none" }}></i> </Button>
+            <Button className="addBtn" variant="light" onClick={handleAdd} id={shoe._id}>
+            <i class="fas fa-heart fa-2x" style={{ color: "red", pointerEvents: "none"}}></i> </Button>
           </Card.Body>
         </Card>
         ))}

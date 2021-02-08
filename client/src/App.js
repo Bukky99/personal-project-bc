@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
+import RandomSearch from "./components/RandomSearch";
 
 
 // SERVICES
@@ -22,7 +23,7 @@ const App = () => {
         render={() => (
           <React.Fragment>
             <Home />
-            
+            <RandomSearch />
           </React.Fragment>
         )}
       />
