@@ -17,5 +17,15 @@ module.exports = (app) => {
     });
   });
 
-  
+  app.get("/api/randomTrainer", async (req, res) => {
+    const randomSearch = await Trainer.aggregate([{$sample: {size:1}}]);
+    console.log(randomSearch)
+    res.json({
+      message: "Your random sneaker",
+      shoe: randomSearch
+
+      
+    });
+    
+  });
 };

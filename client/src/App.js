@@ -3,10 +3,9 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
-import Login from "./Pages/Login";
+
 
 // SERVICES
 
@@ -28,14 +27,7 @@ const App = () => {
         )}
       />
 
-      {/* <Route
-        path="/about"
-        render={() => (
-          <React.Fragment>
-            <About />
-          </React.Fragment>
-        )}
-      /> */}
+    
 
       <Route
         path="/wishList"
@@ -55,15 +47,7 @@ const App = () => {
         )}
       />
 
-      <Route
-        path="/login"
-        render={() => (
-          <React.Fragment>
-            <Login />
-            {/*<WishList />*/}
-          </React.Fragment>
-        )}
-      />
+     
     </BrowserRouter>
   );
 };
