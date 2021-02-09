@@ -6,7 +6,9 @@ import Home from "./Pages/Home";
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
 import RandomSearch from "./components/RandomSearch";
+// import Carousel from "react-elastic-carousel"
 import LatestReleases from "./components/LatestReleases";
+
 
 
 // SERVICES

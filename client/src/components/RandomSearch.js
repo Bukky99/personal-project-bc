@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from "axios"
 import {Card, Button} from "react-bootstrap";
+import "./RandomSearch.css"
 
 
 
@@ -23,10 +24,10 @@ const RandomSearch = () => {
     return (
         <div>
             <div className="randomSearch">
-                <Button variant="secondary" onClick={handleClick}  >Generate Random Sneaker</Button>
+                <Button variant="secondary" style={{backgroundColor: "#4d4d4f"}}onClick={handleClick}  >Generate Random Sneaker</Button>
                 <div>
                     {randomShoe.map((shoe) => (
-                        <Card className="shoeInfo" style={{ width: '25%'}} key={shoe._id}>
+                        <Card className="shoeInfo"  key={shoe._id}>
                         <Card.Img variant="top" src={shoe.imageLink} />
                         <Card.Body>
                             <Card.Title>{shoe.name}</Card.Title>
