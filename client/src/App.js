@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
 import RandomSearch from "./components/RandomSearch";
+import LatestReleases from "./components/LatestReleases";
 
 
 // SERVICES
@@ -24,6 +25,7 @@ const App = () => {
           <React.Fragment>
             <Home />
             <RandomSearch />
+            <LatestReleases />
           </React.Fragment>
         )}
       />

@@ -8,6 +8,7 @@ const WishList = () => {
   const [foundShoes, setFoundShoes] = useState([]);
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
+  const [removeText, setRemoveText] = useState ("")
   const notificationSystem = useRef();
   //object tracking two fields, username & description
   const [input, setInput] = useState({
@@ -31,10 +32,12 @@ const WishList = () => {
     event.preventDefault();
     setEmail("");
     setDescription("");
+    
     const newRequest = {
       email: input.email,
       description: input.description,
     };
+
     axios.post("http://localhost:5000/api/request", newRequest);
 
     const requestNotification = notificationSystem.current;
@@ -43,6 +46,10 @@ const WishList = () => {
       level: 'success'
     });
   } 
+
+  // function handleSubmit() {
+  //   setRemoveText("")
+  // }
 
   useEffect(() => {
     const myStorage = window.localStorage;
@@ -108,7 +115,7 @@ const WishList = () => {
           <b>Request sneakers you would like to get more information about:</b>
         </label>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label style={{ color: '#4d4d4f'}}>Email address</Form.Label>
             <Form.Control 
             onChange={handleChange}
             name="email"
@@ -121,7 +128,7 @@ const WishList = () => {
           </Form.Group>
 
           <Form.Group controledId="formBasicDescription">
-            <Form.Label>Sneaker Name/Sneaker Description </Form.Label>
+            <Form.Label style={{ color: '#4d4d4f'}}>Sneaker Name/Sneaker Description </Form.Label>
             <Form.Control
             onChange={handleChange}
             name="description" 
@@ -130,11 +137,11 @@ const WishList = () => {
             placeholder="Enter a sneaker name or description of a sneaker" />
           </Form.Group>
 
-          <Form.Group controlId="formBasicCheckBox">
-            <Form.Check type="checkbox" label="Tick to subscribe to monthly sneaker release alerts" />
-          </Form.Group>
-          <Button className="subBtn"onClick={handleClick} variant="primary" type="submit">
-            <b>Submit</b>
+          {/* <Form.Group controlId="formBasicCheckBox">
+            <Form.Check style={{ color: '#4d4d4f'}} type="checkbox" label="Tick to subscribe to monthly sneaker release alerts" />
+          </Form.Group> */}
+          <Button onClick={handleClick} variant="light" type="submit" >
+            <b style={{ color: '#4d4d4f'}}>Submit</b>
           </Button>
         </Form>
         

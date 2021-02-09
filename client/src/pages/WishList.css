@@ -1,7 +1,7 @@
 .formTitle {
   text-decoration: underline;
   width: 100%;
-  
+  color: #4d4d4f
 }
 
 
@@ -11,10 +11,5 @@
   border-top: 30px solid;
   padding: 20px;
   border-width: 20%;
-  background-color: #d3d3d3;
-}
-
-.subBtn {
-  background-color:black;
-  
+  background-color: #f2f2f2;
 }

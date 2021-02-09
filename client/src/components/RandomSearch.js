@@ -23,10 +23,10 @@ const RandomSearch = () => {
     return (
         <div>
             <div className="randomSearch">
-                <Button onClick={handleClick}  >Generate Random Sneaker</Button>
+                <Button variant="secondary" onClick={handleClick}  >Generate Random Sneaker</Button>
                 <div>
                     {randomShoe.map((shoe) => (
-                        <Card className="shoeInfo" style={{ width: '50%', itemAlign: 'centre'}} key={shoe._id}>
+                        <Card className="shoeInfo" style={{ width: '25%'}} key={shoe._id}>
                         <Card.Img variant="top" src={shoe.imageLink} />
                         <Card.Body>
                             <Card.Title>{shoe.name}</Card.Title>

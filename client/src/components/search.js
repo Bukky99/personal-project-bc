@@ -86,7 +86,7 @@ const Search = () => {
         {/* Fetch data from API */}
         {/* <i className="fas fa-search" /> */}
         <MDBCol md="6" className="searchBar">
-        <label><b>Search for your Sneaker:</b></label>
+        <label style={{ color: '#4d4d4f'}}><b>Search for your Sneaker:</b></label>
           <MDBInput 
           hint="Search" 
           type="text"
