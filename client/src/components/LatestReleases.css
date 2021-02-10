@@ -39,18 +39,12 @@ align-items: center;
     position: relative;
     margin: auto;
     text-align: center;
-    
-
-}
-
-.shoe-name-border {
     border: solid #4d4d4f;
-    /* border-radius: 10px;
-    position: relative;
-    width: 60%; */
+
 }
+
+
 
 .latestReleasesTitle {
     color:#b7b7b8 ;
-}
-
+} 
