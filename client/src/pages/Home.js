@@ -10,10 +10,7 @@ const Home = () => {
         <h3 className="homeSubTitle">Click <em>here</em> to start your search</h3>
       </Link>
 
-      {/* <div>
-        <h2 className="latestReleasesTitle">Latest Releases</h2>
-      </div> */}
-     
+      
       
     </div>
   );

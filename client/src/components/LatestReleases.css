@@ -29,6 +29,28 @@ align-items: center;
     width: 40%
 }
 
-/* .carousel .slider {
-  
-} */
+.carousel-container {
+    position: relative;
+}
+
+.shoe-name{
+    color: #4d4d4f;
+    width: 110%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    
+
+}
+
+.shoe-name-border {
+    border: solid #4d4d4f;
+    /* border-radius: 10px;
+    position: relative;
+    width: 60%; */
+}
+
+.latestReleasesTitle {
+    color:#b7b7b8 ;
+}
+

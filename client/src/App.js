@@ -6,8 +6,9 @@ import Home from "./Pages/Home";
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
 import RandomSearch from "./components/RandomSearch";
-// import Carousel from "react-elastic-carousel"
+
 import LatestReleases from "./components/LatestReleases";
+import SneakerNews from "./components/SneakerNews";
 
 
 
@@ -26,8 +27,9 @@ const App = () => {
         render={() => (
           <React.Fragment>
             <Home />
-            <RandomSearch />
+            <SneakerNews />
             <LatestReleases />
+            <RandomSearch />
           </React.Fragment>
         )}
       />

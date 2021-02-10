@@ -91,11 +91,11 @@ const WishList = () => {
           <Card className="shoeInfo" style={{ width: '18rem' }} key={list._id}>
           <Card.Img variant="top" src={list.imageLink} />
           <Card.Body>
-            <Card.Title>{list.name}</Card.Title>
-            <Card.Text>
-                  <p>Release Date: {list.releaseDate}</p>
-                  <p>Brand: {list.brand}</p>
-                  <p>Price: {list.retailPrice.currencyCode} {list.retailPrice.amount}</p>
+            <Card.Title style={{ color: '#4d4d4f' }}>{list.name}</Card.Title>
+            <Card.Text className="cardText">
+                  <p><b>Release Date:</b> {list.releaseDate}</p>
+                  <p><b>Brand:</b> {list.brand}</p>
+                  <p><b>Price:</b> {list.retailPrice.currencyCode} {list.retailPrice.amount}</p>
             </Card.Text>
             <Button variant="light" onClick={handleRemove} id={list._id}>
               

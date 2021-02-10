@@ -11,11 +11,11 @@ const Navbar = (props) => {
       {/* <Link className="link" to="/about">
         About
       </Link> */}
-      <Link className="link" to="/wishList">
-        My WishList
-      </Link>
       <Link className="link" to="/sneakerSearch">
-        Sneaker Search
+       Sneaker Search
+      </Link>
+      <Link className="link" to="/wishList">
+        My Wish List
       </Link>
       {/* <Link className="link" to="/login">
         Login

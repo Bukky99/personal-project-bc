@@ -24,7 +24,8 @@ const RandomSearch = () => {
     return (
         <div>
             <div className="randomSearch">
-                <Button variant="secondary" style={{backgroundColor: "#4d4d4f"}}onClick={handleClick}  >Generate Random Sneaker</Button>
+                <h2 className="randomShoeTitle">Generate a random Shoe</h2>
+                <Button className="randomButton" variant="secondary" style={{backgroundColor: "#4d4d4f"}}onClick={handleClick}  >Push The Button!</Button>
                 <div>
                     {randomShoe.map((shoe) => (
                         <Card className="shoeInfo"  key={shoe._id}>

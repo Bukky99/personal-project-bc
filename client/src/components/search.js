@@ -109,13 +109,13 @@ const Search = () => {
         <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
         <Card.Img variant="top" src={shoe.imageLink} />
           <Card.Body>
-            <Card.Title>{shoe.name}</Card.Title>
-            <Card.Text>
+            <Card.Title style={{ color: '#4d4d4f' }}>{shoe.name}</Card.Title>
+            <Card.Text className="cardText">
               
-                  <p>Release Date: {shoe.releaseDate}</p>
-                  <p>Brand: {shoe.brand}</p>
-                  <p>Model: {shoe.model} </p>
-                  <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
+                  <p><b>Release Date:</b> {shoe.releaseDate}</p>
+                  <p><b>Brand:</b> {shoe.brand}</p>
+                  <p><b>Model:</b> {shoe.model} </p>
+                  <p><b>Price:</b> {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
                   
             </Card.Text>
             <Button className="addBtn" variant="light" onClick={handleAdd} id={shoe._id}>

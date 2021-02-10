@@ -1,3 +1,13 @@
 .shoeInfo {
-    width: 25%;
+    width: 40%;
+    position: relative;
+    
+}
+
+.randomShoeTitle {
+    color:#b7b7b8
+}
+
+.randomButton {
+    padding: 15px 32px
 }
