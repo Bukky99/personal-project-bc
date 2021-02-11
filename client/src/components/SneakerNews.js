@@ -12,7 +12,7 @@ const SneakerNews = () => {
                     <img className="card-img-top" src="https://sneakernews.com/wp-content/uploads/2021/01/jordan-6-carmine-official-images-ct8529-106-5.jpg" alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">The Air Jordan 6 “Carmine” Brings Back Nike Air For First Time Since 1991</h5>
-                        <p className="card-text">The Air Jordan 6 “Carmine” holds a special, albeit brief, moment in the annals of Air Jordan history...</p>
+                        <p className="card-text">The Air Jordan 6 “Carmine” holds a special, albeit brief, moment in the annals of Air Jordan history. Arguably among the most audaciously...</p>
                         <p className="card-text"><small class="text-muted">January 10, 2021 by <a href="https://sneakernews.com/2021/01/10/air-jordan-6-retro-carmine-2021-ct8529-106-release-date/" target="_blank">Sneaker News</a></small></p>
                     </div>
                 </div>

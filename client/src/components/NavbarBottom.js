@@ -12,7 +12,7 @@ const NavbarBottom = () => {
 			</div>
 
             <div>
-                <p class="name">© 2021 By Bukola Omojowo</p>
+                <p class="name">By Bukola Omojowo © 2021</p>
             </div>
               
         </div>

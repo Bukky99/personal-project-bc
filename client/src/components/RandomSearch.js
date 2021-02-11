@@ -24,20 +24,20 @@ const RandomSearch = () => {
     return (
         <div>
             <div className="randomSearch">
-                <h2 className="randomShoeTitle">Generate a random Shoe</h2>
+                <h2 className="randomShoeTitle">Generate A Random Sneaker</h2>
                 <Button className="randomButton" variant="secondary" style={{backgroundColor: "#4d4d4f"}}onClick={handleClick}  >Push The Button!</Button>
                 <div>
                     {randomShoe.map((shoe) => (
                         <Card className="shoeInfo"  key={shoe._id}>
                         <Card.Img variant="top" src={shoe.imageLink} />
                         <Card.Body>
-                            <Card.Title>{shoe.name}</Card.Title>
+                            <Card.Title className="randomShoeName">{shoe.name}</Card.Title>
                             <Card.Text>
                             
-                                <p>Release Date: {shoe.releaseDate}</p>
+                                {/* <p>Release Date: {shoe.releaseDate}</p>
                                 <p>Brand: {shoe.brand}</p>
                                 <p>Model: {shoe.model} </p>
-                                <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
+                                <p>Price: {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p> */}
                                 
                             </Card.Text>
                             </Card.Body>
