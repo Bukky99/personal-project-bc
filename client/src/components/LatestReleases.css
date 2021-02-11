@@ -35,9 +35,9 @@ align-items: center;
 
 .shoe-name{
     color: #4d4d4f;
-    width: 110%;
     position: relative;
-    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
     border: solid #4d4d4f;
 
