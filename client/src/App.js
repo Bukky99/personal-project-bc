@@ -6,9 +6,9 @@ import Home from "./Pages/Home";
 import WishList from "./Pages/WishList";
 import Search from "./components/Search";
 import RandomSearch from "./components/RandomSearch";
-
 import LatestReleases from "./components/LatestReleases";
 import SneakerNews from "./components/SneakerNews";
+import NavbarBottom from "./components/NavbarBottom"
 
 
 
@@ -30,6 +30,7 @@ const App = () => {
             <LatestReleases />
             <RandomSearch />
             <SneakerNews />
+            <NavbarBottom />
           </React.Fragment>
         )}
       />
@@ -41,6 +42,7 @@ const App = () => {
         render={() => (
           <React.Fragment>
             <WishList />
+            <NavbarBottom />
           </React.Fragment>
         )}
       />
@@ -50,6 +52,7 @@ const App = () => {
         render={() => (
           <React.Fragment>
             <Search />
+            <NavbarBottom />
           </React.Fragment>
         )}
       />

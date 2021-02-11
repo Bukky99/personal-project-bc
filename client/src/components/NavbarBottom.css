@@ -1,0 +1,46 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.footer {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    padding: 10px;
+    
+
+  }
+
+ 
+.icons{
+	margin-top: 25px;
+}
+
+.icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #4d4d4f;
+	border-radius: 2px;
+    font-size: 20px;
+	color: #f2f2f2;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+    
+}
+
+.icons{
+    text-align: center;
+}
+.name {
+    text-align: center;
+    color: #4d4d4f;
+}
+
+.contact {
+    color: #4d4d4f
+}
+ 
