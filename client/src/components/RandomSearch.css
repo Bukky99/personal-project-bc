@@ -1,9 +1,29 @@
-.randomShoePic {
+.randomShoe {
     margin: 5% 5% 5% 5%;
     position: relative;
-    padding: 5%;
-    
 }
+
+.grid {
+    min-height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+/* 
+.shoeInfo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    max-width: 100%;
+    float: left;
+    display: inline;
+    width: 49%;
+    padding: 2px 16px;
+    margin: 10px;
+    padding-left: 10px;
+    border: black;
+    border-radius: 30px;
+  } */
 
 .randomShoeTitle {
     color:#b7b7b8
@@ -16,3 +36,20 @@
 .randomShoeName{
     text-align: center;
 }
+
+.randomShoeContainer{
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.randomShoeInfoTitle {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.randomShoeText {
+    text-align: center;
+    
+}
+

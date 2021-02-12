@@ -105,7 +105,7 @@ const Search = () => {
       {/* Displays data from API */}
       <div className="shoeInfoHolder">
         {/* <p className="searchMessage">{message}</p> */}
-        {shoes.map((shoe) => (
+        {shoes.map((shoe) => ( 
         <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
         <Card.Img variant="top" src={shoe.imageLink} />
           <Card.Body>

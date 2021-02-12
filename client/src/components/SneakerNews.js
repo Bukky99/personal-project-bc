@@ -30,8 +30,8 @@ const SneakerNews = () => {
                     <img className="card-img-top" src="https://sneakernews.com/wp-content/uploads/2021/02/Reebok-Mott-Hall-Partnership.jpg?w=540&h=380&crop=1" alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">Reebok And The Kickback Pledge Support To Entrepreneurial Students In Brooklyn</h5>
-                        <p className="card-text">Throughout its decades-spanning history, Reebok has leveraged its influence...</p>
-                        <p className="card-text"><small class="text-muted">January 26, 2021 by <a href="https://sneakernews.com/2021/01/26/nike-air-force-1-low-valentines-day-love-letter-dd3384-600/" target="_blank">Sneaker News</a></small></p>
+                        <p className="card-text">Throughout its decades-spanning history, Reebok has leveraged its influence and resources as a global leader in sportswear...</p>
+                        <p className="card-text"><small class="text-muted">Feburary 11, 2021 by <a href="https://sneakernews.com/2021/02/11/reebok-the-kickback-mott-hall-bridges-academy-partnership/" target="_blank">Sneaker News</a></small></p>
                     </div>
                 </div>
               
