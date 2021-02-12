@@ -15,8 +15,7 @@ import NavbarBottom from "./components/NavbarBottom"
 // SERVICES
 
 const App = () => {
-  // const [name, setName] = useState("Bukky");
-  // const [shoes, setShoes] = useState(null);
+  
 
   return (
     <BrowserRouter>

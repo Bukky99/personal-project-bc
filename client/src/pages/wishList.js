@@ -97,10 +97,7 @@ const WishList = () => {
                   <p><b>Brand:</b> {list.brand}</p>
                   <p><b>Price:</b> {list.retailPrice.currencyCode} {list.retailPrice.amount}</p>
             </Card.Text>
-            <Button variant="light" onClick={handleRemove} id={list._id}>
-              
-            <i class="fas fa-times fa-2x" style={{ color: "red", pointerEvents: "none" }}></i>
-               </Button>
+            <i class="fas fa-times fa-2x" onClick={handleRemove} id={list._id} style={{ color: "red", cursor: "pointer"}}></i>
           </Card.Body>
         </Card>
             ))}

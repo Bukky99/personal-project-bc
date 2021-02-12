@@ -6,8 +6,8 @@
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 10px;
-    
+    overflow: hidden;
+    height: 10rem;
 
   }
 

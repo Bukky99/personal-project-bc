@@ -10,15 +10,14 @@ import NotificationSystem from "react-notification-system";
 const Search = () => {
   const [query, setQuery] = useState("");
   const [shoes, setShoes] = useState([]);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("hello");
   const notificationSystem = useRef();
+  // const [displayText, setDisplayText] = useState({
+  //   results: "hello",
+  //   noresults: true
+  // });
+  const [displayText, setDisplayText] = useState("hello")
 
-  // const fetchData = async () => {
-  //   const apiUrl = `http://localhost:3000/api/trainer?q=${query}`;
-  //   const response = await axios.get(apiUrl);
-  //   setMessage(response.data.message);
-  //   setShoes(response.data.shoes);
-  // };
 
   //console.log(query);
   const handleChange = async (event) => {
@@ -29,9 +28,26 @@ const Search = () => {
     setMessage(response.data.message);
     setShoes(response.data.shoes);
     console.log(response.data.shoes)
+
+    // if(response === []) {
+    //   response === "message"
+    // }
+
+    // const pageText = () => setDisplayText(true)
+    //   // const text = "Display this text on page";
+    //   // if (response.data.shoes = []){
+    //   //   return {text}
+    //   // }
+    //   // console.log(text)
+    // } 
+
+
+
   };
 
-   
+  
+
+
   const handleAdd = (event) => {
     //console.log(event.target.id);
     let foundShoes = shoes.find((shoe) => event.target.id === shoe._id);
@@ -72,6 +88,8 @@ const Search = () => {
       level: 'success'
       
     });
+
+    
   
   };
 
@@ -81,50 +99,53 @@ const Search = () => {
   return (
     <div>
       <div className="container">
-        
-        
-        {/* Fetch data from API */}
-        {/* <i className="fas fa-search" /> */}
         <MDBCol md="6" className="searchBar">
-        <label style={{ color: '#4d4d4f'}}><b>Search for your Sneaker:</b></label>
-          <MDBInput 
-          hint="Search" 
-          type="text"
-          type="search"
-          containerClass="mt-10"
-          name="query"
-          value={query}
-          id="shoe-search"
-          placeholder="Search..."
-          onChange={handleChange} />
+          <label style={{ color: '#4d4d4f'}}><b>Search for your Sneaker:</b></label>
+            <MDBInput 
+            hint="Search" 
+            type="text"
+            type="search"
+            containerClass="mt-10"
+            name="query"
+            value={query}
+            id="shoe-search"
+            placeholder="Search..."
+            onChange={handleChange} />
         </MDBCol>
-      
-       
         
-      </div>
-      {/* Displays data from API */}
-      <div className="shoeInfoHolder">
-        {/* <p className="searchMessage">{message}</p> */}
-        {shoes.map((shoe) => ( 
-        <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
-        <Card.Img variant="top" src={shoe.imageLink} />
-          <Card.Body>
-            <Card.Title style={{ color: '#4d4d4f' }}>{shoe.name}</Card.Title>
-            <Card.Text className="cardText">
-              
-                  <p><b>Release Date:</b> {shoe.releaseDate}</p>
-                  <p><b>Brand:</b> {shoe.brand}</p>
-                  <p><b>Model:</b> {shoe.model} </p>
-                  <p><b>Price:</b> {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
+
+      
+        <div className="shoeInfoHolder">
+          {/* {handleChange}
+          {displayText.results} */}
+
+          <div className="pageText">
+            {message}
+          </div>
+          
+        
+
+          {shoes.map((shoe) => ( 
+          <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
+            <Card.Img variant="top" src={shoe.imageLink} />
+              <Card.Body>
+                <Card.Title style={{ color: '#4d4d4f' }}>{shoe.name}</Card.Title>
+                <Card.Text className="cardText">
                   
-            </Card.Text>
-            <Button className="addBtn" variant="light" onClick={handleAdd} id={shoe._id}>
-            <i class="fas fa-heart fa-2x" style={{ color: "red", pointerEvents: "none"}}></i> </Button>
-          </Card.Body>
-        </Card>
-        ))}
-      </div>
+                      <p><b>Release Date:</b> {shoe.releaseDate}</p>
+                      <p><b>Brand:</b> {shoe.brand}</p>
+                      <p><b>Model:</b> {shoe.model} </p>
+                      <p><b>Price:</b> {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
+                      
+                </Card.Text>
+                {/* className="addBtn" variant="light" onClick={handleAdd} id={shoe._id}> */}
+                <i class="fas fa-heart fa-2x" onClick={handleAdd}  id={shoe._id}></i> 
+              </Card.Body>
+            </Card>
+          ))} 
+        </div>
         <NotificationSystem ref={notificationSystem} />
+        </div>
     </div>
   );
 };

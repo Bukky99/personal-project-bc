@@ -43,3 +43,20 @@ label {
 .cardText {
   color: #4d4d4f;
 }
+
+.pageText {
+  text-align: center;
+  /* font-size: 200px; */
+}
+
+
+.fa-heart {
+  color: #4d4d4f;
+ 
+}
+
+.fa-heart:hover {
+  color: red;
+  cursor: pointer
+}
+
