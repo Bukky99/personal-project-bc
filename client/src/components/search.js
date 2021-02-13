@@ -2,11 +2,11 @@
 import "./Search.css";
 import axios from "axios";
 import React, { useEffect, useState, useRef } from "react";
-import {Card, Button } from "react-bootstrap";
+import {Card } from "react-bootstrap";
 import {MDBInput, MDBCol} from "mdbreact"
 import NotificationSystem from "react-notification-system";
 
-
+ 
 const Search = () => {
   const [query, setQuery] = useState("");
   const [shoes, setShoes] = useState([]);
@@ -40,8 +40,6 @@ const Search = () => {
     // } 
   };
 
-
-
   const handleAdd = (event) => {
     //console.log(event.target.id);
     let foundShoes = shoes.find((shoe) => event.target.id === shoe._id);
@@ -63,12 +61,6 @@ const Search = () => {
     // }
     console.log(shoeClickedArray)
   
-  
-
-
-
-
-   
     //set foundShoeArray(value) to wishList(key)
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
@@ -85,8 +77,6 @@ const Search = () => {
       level: 'success'
       
     });  
-
-    
     setStyle(changedColour);
   
   };
@@ -94,9 +84,6 @@ const Search = () => {
   const setStyle = (changedColour) => {
     setChangedColour(changedColour)
   }
-
-   
-
 
   return(
     <div className="container">
@@ -108,6 +95,7 @@ const Search = () => {
             type="text"
             type="search"
             containerClass="mt-10"
+            size="lg"
             name="query"
             value={query}
             id="shoe-search"

@@ -18,3 +18,8 @@
   color: #4d4d4f;
 }
 
+.shoeInfoHolder{
+  width: 100%;
+  max-width: 100%;
+  margin-left: 10%;
+}

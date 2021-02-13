@@ -8,7 +8,6 @@ const WishList = () => {
   const [foundShoes, setFoundShoes] = useState([]);
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
-  const [removeText, setRemoveText] = useState ("")
   const notificationSystem = useRef();
   //object tracking two fields, username & description
   const [input, setInput] = useState({
@@ -86,8 +85,7 @@ const WishList = () => {
   
   return (
     <div className="container">  
-      <div className="">
-    
+      <div className="shoeInfoHolder">
         {foundShoes.map(list => (
           <Card className="shoeInfo" style={{ width: '18rem' }} key={list._id}>
           <Card.Img variant="top" src={list.imageLink} />

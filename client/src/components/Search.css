@@ -3,9 +3,10 @@
 }
 
 .searchBar {
-  padding: 40px;
-  ;
+  width: 100%;
+ margin-left: 20%;
 }
+
 input,
 label {
   margin: 0.4rem 0;
@@ -23,6 +24,7 @@ label {
 .shoeInfoHolder{
   width: 100%;
   max-width: 100%;
+  margin-left: 10%;
 }
 
 .shoeInfo {
