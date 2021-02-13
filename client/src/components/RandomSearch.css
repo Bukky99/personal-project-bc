@@ -8,6 +8,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
+    
 }
 /* 
 .shoeInfo {
@@ -26,21 +27,24 @@
   } */
 
 .randomShoeTitle {
-    color:#b7b7b8
+    color:#b7b7b8;
+    margin-top: 2.5%;
 }
 
 .randomButton {
-    padding: 15px 32px
+    padding: 20px 32px;
+    margin-top: 2.5%;
 }
 
 .randomShoeName{
     text-align: center;
 }
 
-.randomShoeContainer{
+.randomShoeContainer{ 
     padding: 20px;
     width: 100%;
-    
+    margin-left: 50%;
+    position: relative;
 }
 
 .randomShoeInfoTitle {
@@ -50,6 +54,5 @@
 
 .randomShoeText {
     text-align: center;
-    
 }
 

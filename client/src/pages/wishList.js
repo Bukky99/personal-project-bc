@@ -47,6 +47,7 @@ const WishList = () => {
     });
   } 
 
+
   // function handleSubmit() {
   //   setRemoveText("")
   // }

@@ -26,9 +26,9 @@ const App = () => {
         render={() => (
           <React.Fragment>
             <Home />
-            <LatestReleases />
-            <RandomSearch />
             <SneakerNews />
+            <RandomSearch />
+            <LatestReleases />
             <NavbarBottom />
           </React.Fragment>
         )}

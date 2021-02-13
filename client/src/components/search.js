@@ -10,12 +10,10 @@ import NotificationSystem from "react-notification-system";
 const Search = () => {
   const [query, setQuery] = useState("");
   const [shoes, setShoes] = useState([]);
+  const [shoeClickedArray, setShoeClickedArray] = useState ([])
   const [message, setMessage] = useState("hello");
   const notificationSystem = useRef();
-  // const [displayText, setDisplayText] = useState({
-  //   results: "hello",
-  //   noresults: true
-  // });
+  const [changedColour, setChangedColour] = useState("#4d4d4f")
   const [displayText, setDisplayText] = useState("hello")
 
 
@@ -27,7 +25,7 @@ const Search = () => {
     const response = await axios.get(apiUrl);
     setMessage(response.data.message);
     setShoes(response.data.shoes);
-    console.log(response.data.shoes)
+    //console.log(response.data.shoes)
 
     // if(response === []) {
     //   response === "message"
@@ -40,23 +38,14 @@ const Search = () => {
     //   // }
     //   // console.log(text)
     // } 
-
-
-
   };
 
-  
 
 
   const handleAdd = (event) => {
     //console.log(event.target.id);
     let foundShoes = shoes.find((shoe) => event.target.id === shoe._id);
-    // if (foundShoes === null) {
-    //   foundShoes = event.target.id
-    // }
-    //console.log(shoes.find((shoe) => event.target.id === shoe._id));
-
-  
+      
     //local storage variable
     const myStorage = window.localStorage;
 
@@ -65,42 +54,55 @@ const Search = () => {
     if (foundShoesArray === null) {
       foundShoesArray = [];
     }
+    //console.log(foundShoes)
 
+    const clickedShoe = shoes.find((shoe) => event.target.id === shoe._id);
+    
+    // if(clickedShoe === true){
+    //   setShoeClickedArray.push(clickedShoe)
+    // }
+    console.log(shoeClickedArray)
+  
+  
+
+
+
+
+   
     //set foundShoeArray(value) to wishList(key)
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
-
 
     //store item in array
     foundShoesArray.push(foundShoes);
 
-
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
     //console.log(foundShoeArray);
-    
-    console.log(notificationSystem)
-    console.log(notificationSystem.current)
-    
   
     const notification = notificationSystem.current;
     notification.addNotification({
       message: `${foundShoes.name} was added to your wishlist`,
       level: 'success'
       
-    });
+    });  
 
     
+    setStyle(changedColour);
   
   };
+  
+  const setStyle = (changedColour) => {
+    setChangedColour(changedColour)
+  }
 
    
 
 
-  return (
-    <div>
+  return(
+    <div className="container">
       <div className="container">
         <MDBCol md="6" className="searchBar">
-          <label style={{ color: '#4d4d4f'}}><b>Search for your Sneaker:</b></label>
+          <label style={{ color: '#4d4d4f'}}><b>Start Your Search:</b></label>
             <MDBInput 
             hint="Search" 
             type="text"
@@ -113,18 +115,14 @@ const Search = () => {
             onChange={handleChange} />
         </MDBCol>
         
-
-      
         <div className="shoeInfoHolder">
           {/* {handleChange}
           {displayText.results} */}
 
-          <div className="pageText">
+          {/* <div className="pageText">
             {message}
-          </div>
+          </div> */}
           
-        
-
           {shoes.map((shoe) => ( 
           <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
             <Card.Img variant="top" src={shoe.imageLink} />
@@ -139,13 +137,16 @@ const Search = () => {
                       
                 </Card.Text>
                 {/* className="addBtn" variant="light" onClick={handleAdd} id={shoe._id}> */}
-                <i class="fas fa-heart fa-2x" onClick={handleAdd}  id={shoe._id}></i> 
+                <i class="fas fa-heart fa-2x" 
+                onClick={handleAdd}
+                id={shoe._id}
+                ></i> 
               </Card.Body>
             </Card>
           ))} 
         </div>
         <NotificationSystem ref={notificationSystem} />
-        </div>
+      </div>
     </div>
   );
 };

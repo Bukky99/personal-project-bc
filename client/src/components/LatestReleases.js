@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const LatestReleases = () => {
     return (
-        <div>
+        <div className="container">
            <div className="carousel-container">
                 <h2 className="latestReleasesTitle">Latest Releases</h2>
                 <Carousel >

@@ -4,16 +4,18 @@
     overflow: hidden;
     background-color: #f2f2f2;
     position: relative;
+    left: 0;
     bottom: 0;
+    right: 0;
     width: 100%;
     overflow: hidden;
-    height: 10rem;
-
-  }
-
+    height: 17%;
+    margin: 50px 0 0;
+}
  
 .icons{
 	margin-top: 25px;
+    text-align: center;
 }
 
 .icons a{
@@ -28,19 +30,15 @@
 	text-align: center;
 	line-height: 35px;
 	margin-right: 10px;
-	margin-bottom: 5px;
-    
+	margin-bottom: 5px; 
 }
 
-.icons{
-    text-align: center;
-}
+
+
 .name {
     text-align: center;
     color: #4d4d4f;
+    font-size: 10px;
+    line-height: 1.8rem
 }
 
-.contact {
-    color: #4d4d4f
-}
- 
