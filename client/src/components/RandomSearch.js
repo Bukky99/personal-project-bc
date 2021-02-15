@@ -61,7 +61,7 @@ const RandomSearch = () => {
                                                 <p><b>Model:</b> {shoe.model} </p>
                                                 <p><b>Price:</b> {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
                                                 <p>
-                                                    <a href={shoe.website} target="_blank">
+                                                    <a href={shoe.website} rel="noreferrer" target="_blank">
                                                         
                                                         <Button className="buyBtn" variant="secondary" style={{backgroundColor: "#4d4d4f"}}>Buy now</Button>
                                                     </a>

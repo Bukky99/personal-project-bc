@@ -2,9 +2,11 @@
   color: #4d4d4f;
   font-weight: bolder;
   width: 100%;
-  text-align: center;
+  text-align: center ;
   position: relative;
-  padding: 5%
+  padding: 5%;
+  
+
 }
 
 .link:hover {
@@ -20,6 +22,8 @@
   height: 70px;
   position: relative;
   overflow: hidden;
+  padding-top: 20px;
+  
 }
 
 /* body {

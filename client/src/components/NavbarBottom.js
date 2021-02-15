@@ -1,13 +1,12 @@
 import React from 'react';
-import {Link} from "react-router-dom"
 import "./NavbarBottom.css"
 
-const NavbarBottom = () => {
+const NavbarBottom = () => { 
     return (
         <div className="footer">
             <div className="icons">
-                <a href="https://github.com/Bukky99" target="_blank"><i class="fa fa-github"></i></a>
-                 <a href="https://www.linkedin.com/in/bukola-omojowo/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Bukky99" rel="noreferrer" target="_blank"><i class="fa fa-github"></i></a>
+                 <a href="https://www.linkedin.com/in/bukola-omojowo/" rel="noreferrer" target="_blank"><i class="fa fa-linkedin"></i></a>
                     
             </div>
 

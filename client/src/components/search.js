@@ -1,7 +1,7 @@
 //import React from "react";
 import "./Search.css";
 import axios from "axios";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import {Card } from "react-bootstrap";
 import {MDBInput, MDBCol} from "mdbreact"
 import NotificationSystem from "react-notification-system";
@@ -10,34 +10,37 @@ import NotificationSystem from "react-notification-system";
 const Search = () => {
   const [query, setQuery] = useState("");
   const [shoes, setShoes] = useState([]);
-  const [shoeClickedArray, setShoeClickedArray] = useState ([])
-  const [message, setMessage] = useState("hello");
+  const [shoesClicked, setShoesClicked] = useState ([])
+  const [clickedBtn, setClickedBtn] = useState (false)
   const notificationSystem = useRef();
-  const [changedColour, setChangedColour] = useState("#4d4d4f")
-  const [displayText, setDisplayText] = useState("hello")
-
-
+ 
   //console.log(query);
   const handleChange = async (event) => {
     event.preventDefault();
     setQuery(event.target.value);
     const apiUrl = `http://localhost:3000/api/trainer?q=${event.target.value}`;
     const response = await axios.get(apiUrl);
-    setMessage(response.data.message);
-    setShoes(response.data.shoes);
-    //console.log(response.data.shoes)
+  
+    const myStorage = window.localStorage;
+    let foundShoesArray = JSON.parse(myStorage.getItem("wishList"));
+    if (foundShoesArray === null) {
+      foundShoesArray = [];
+    }
 
-    // if(response === []) {
-    //   response === "message"
-    // }
+    //updating array
+    const formattedShoes = response.data.shoes.map(shoe => {
+       let inWishList = false 
+       
+      if (foundShoesArray.map(shoe => shoe._id).includes(shoe._id)) {
+        inWishList = true
+      }
 
-    // const pageText = () => setDisplayText(true)
-    //   // const text = "Display this text on page";
-    //   // if (response.data.shoes = []){
-    //   //   return {text}
-    //   // }
-    //   // console.log(text)
-    // } 
+      return {...shoe, inWishList}
+    })
+
+
+    setShoes(formattedShoes)
+    console.log(formattedShoes)
   };
 
   const handleAdd = (event) => {
@@ -54,13 +57,6 @@ const Search = () => {
     }
     //console.log(foundShoes)
 
-    const clickedShoe = shoes.find((shoe) => event.target.id === shoe._id);
-    
-    // if(clickedShoe === true){
-    //   setShoeClickedArray.push(clickedShoe)
-    // }
-    console.log(shoeClickedArray)
-  
     //set foundShoeArray(value) to wishList(key)
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
@@ -68,22 +64,28 @@ const Search = () => {
     foundShoesArray.push(foundShoes);
 
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
-
     //console.log(foundShoeArray);
   
     const notification = notificationSystem.current;
     notification.addNotification({
       message: `${foundShoes.name} was added to your wishlist`,
       level: 'success'
+    }); 
+    
+    const formattedShoes = shoes.map(shoe => {
+      let inWishList = false 
       
-    });  
-    setStyle(changedColour);
-  
+     if (foundShoesArray.map(shoe => shoe._id).includes(shoe._id)) {
+       inWishList = true
+     }
+
+     return {...shoe, inWishList}
+   })
+
+   setShoes(formattedShoes)
+     
   };
   
-  const setStyle = (changedColour) => {
-    setChangedColour(changedColour)
-  }
 
   return(
     <div className="container">
@@ -93,7 +95,6 @@ const Search = () => {
             <MDBInput 
             hint="Search" 
             type="text"
-            type="search"
             containerClass="mt-10"
             size="lg"
             name="query"
@@ -102,36 +103,32 @@ const Search = () => {
             placeholder="Search..."
             onChange={handleChange} />
         </MDBCol>
-        
-        <div className="shoeInfoHolder">
-          {/* {handleChange}
-          {displayText.results} */}
-
-          {/* <div className="pageText">
-            {message}
-          </div> */}
-          
+        <div className="shoeInfoHolder">      
           {shoes.map((shoe) => ( 
           <Card className="shoeInfo" style={{ width: '18rem' }} key={shoe._id}>
             <Card.Img variant="top" src={shoe.imageLink} />
               <Card.Body>
                 <Card.Title style={{ color: '#4d4d4f' }}>{shoe.name}</Card.Title>
                 <Card.Text className="cardText">
-                  
                       <p><b>Release Date:</b> {shoe.releaseDate}</p>
                       <p><b>Brand:</b> {shoe.brand}</p>
                       <p><b>Model:</b> {shoe.model} </p>
                       <p><b>Price:</b> {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
-                      
                 </Card.Text>
-                {/* className="addBtn" variant="light" onClick={handleAdd} id={shoe._id}> */}
                 <i class="fas fa-heart fa-2x" 
+                style={{color: shoe.inWishList ? "red" : "#4d4d4f"}}
                 onClick={handleAdd}
                 id={shoe._id}
                 ></i> 
               </Card.Body>
             </Card>
           ))} 
+        </div>
+        <div>
+        {/* {shoesClicked.map(shoe =>(
+              
+              <div key={shoe.id}>{shoe.value}</div>
+            ))} */}
         </div>
         <NotificationSystem ref={notificationSystem} />
       </div>
