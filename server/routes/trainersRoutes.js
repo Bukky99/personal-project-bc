@@ -1,8 +1,5 @@
 const mongoose = require("mongoose");
 const Trainer = mongoose.model("trainers");
-//console.log(Trainer.find());
-//const querystring = require("querystring");
-//const url = "http://localhost:3000/api/trainers?q=jordan";
 
 module.exports = (app) => {
   app.get("/api/trainer", async (req, res) => {
@@ -12,7 +9,7 @@ module.exports = (app) => {
     console.log(query.split(/\s+/))
     console.log(result);
     res.json({
-      message: "Here are your searched sneakers...",
+      message: "Here are your searched sneakers...", //used for testing in postman
       shoes: result,
     });
   });
@@ -21,7 +18,7 @@ module.exports = (app) => {
     const randomSearch = await Trainer.aggregate([{$sample: {size:1}}]);
     console.log(randomSearch)
     res.json({
-      message: "Your random sneaker",
+      message: "Your random sneaker", //used for testing in postman
       shoe: randomSearch
     });
     

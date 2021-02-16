@@ -27,7 +27,6 @@ const WishList = () => {
   }
 //onclick remove info from input
   function handleClick(event) {
-    // event.formBasicEmail.reset()
     event.preventDefault();
     setEmail("");
     setDescription("");
@@ -46,11 +45,6 @@ const WishList = () => {
     });
   } 
 
-
-  // function handleSubmit() {
-  //   setRemoveText("")
-  // }
-
   useEffect(() => {
     const myStorage = window.localStorage;
     const wishList = myStorage.getItem("wishList");
@@ -65,13 +59,11 @@ const WishList = () => {
 
     let filteredShoes = wishList.filter(shoe => event.target.id !== shoe._id);
    
-    
-    //persit to local stoarge
+        //persit to local stoarge
     myStorage.setItem("wishList", JSON.stringify(filteredShoes))
 
     //update component state
     setFoundShoes(filteredShoes);
-
     
     let deletedShoe = wishList.find(shoe => event.target.id === shoe._id);
     const notification = notificationSystem.current;
@@ -82,8 +74,7 @@ const WishList = () => {
 
   }
 
-  
-  return (
+    return (
     <div className="container">  
       <div className="shoeInfoHolder">
         {foundShoes.map(list => (
@@ -132,12 +123,8 @@ const WishList = () => {
             value={input.description}
             placeholder="Enter a sneaker name or description of a sneaker" />
           </Form.Group>
-
-          {/* <Form.Group controlId="formBasicCheckBox">
-            <Form.Check style={{ color: '#4d4d4f'}} type="checkbox" label="Tick to subscribe to monthly sneaker release alerts" />
-          </Form.Group> */}
-          <Button onClick={handleClick} variant="light" type="submit" >
-            <b style={{ color: '#4d4d4f'}}>Submit</b>
+          <Button onClick={handleClick} variant="secondary" style={{backgroundColor: "#4d4d4f"}} type="submit" >
+            <b style={{ color: '#ffffff'}}>Submit</b>
           </Button>
         </Form>
         

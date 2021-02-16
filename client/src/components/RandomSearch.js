@@ -3,23 +3,16 @@ import axios from "axios"
 import {Card, Button} from "react-bootstrap";
 import "./RandomSearch.css"
 
-
-
-
 const RandomSearch = () => {
     const [randomShoe, setRandomShoe] = useState([]);
 
-  
-   
     const handleClick = async (event) => {
         event.preventDefault();
         const apiUrl = "http://localhost:3000/api/randomTrainer"
         const result = await axios.get(apiUrl);
         setRandomShoe(result.data.shoe)
         console.log(result.data.shoe)
-        
     }
-
 
     return (
         <div>
@@ -30,7 +23,7 @@ const RandomSearch = () => {
                         variant="secondary" 
                         style={{backgroundColor: "#4d4d4f"}}
                         onClick={handleClick}>
-                            Push The Button!
+                            <b>Push The Button!</b>
                     </Button>
                     <div className="container">
                         <div className="grid">
@@ -54,19 +47,16 @@ const RandomSearch = () => {
                                         <Card className="randomShoe"  key={shoe._id} style={{width: "18rem", height: "17rem"}}>
                                         <Card.Body>
                                             <Card.Title className="randomShoeInfoTitle">Shoe Info:</Card.Title>
-                                            <Card.Text className="randomShoeText">
-                                            
+                                            <Card.Text className="randomShoeText">                                            
                                                 <p><b>Release Date:</b> {shoe.releaseDate}</p>
                                                 <p><b>Brand:</b> {shoe.brand}</p>
                                                 <p><b>Model:</b> {shoe.model} </p>
                                                 <p><b>Price:</b> {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
                                                 <p>
                                                     <a href={shoe.website} rel="noreferrer" target="_blank">
-                                                        
-                                                        <Button className="buyBtn" variant="secondary" style={{backgroundColor: "#4d4d4f"}}>Buy now</Button>
+                                                        <Button className="buyBtn" variant="secondary" style={{backgroundColor: "#4d4d4f"}}><b>Buy now</b></Button>
                                                     </a>
                                                 </p>
-                                                
                                             </Card.Text>
                                             </Card.Body>
                                             </Card>

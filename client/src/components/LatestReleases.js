@@ -10,7 +10,6 @@ const LatestReleases = () => {
            <div className="carousel-container">
                 <h2 className="latestReleasesTitle">Latest Releases</h2>
                 <Carousel >
-                  
                 <div>
                    <p className="shoe-name">Nike Air Force 1 Low Pine Green</p>
                    <img src="https://cms-cdn.thesolesupplier.co.uk/2020/10/Nike-Air-Force-1-Pine-Green_w900.jpg.webp" alt="Nike Air Force 1 Low Pine Green"/>
@@ -98,14 +97,8 @@ const LatestReleases = () => {
                 <p className="shoe-name">Nike Dunk High Team Red</p>
                     <img src="https://cms-cdn.thesolesupplier.co.uk/2020/12/nike-dunk-high-team-red-1_w900.jpg.webp" alt="Nike Dunk High Team Red"/>
                 </div>
-
                 </Carousel>
-                
-            </div> 
-
-            
-            
-            
+            </div>     
         </div>
     );
 };

@@ -1,4 +1,3 @@
-//import React from "react";
 import "./Search.css";
 import axios from "axios";
 import React, { useState, useRef } from "react";
@@ -10,10 +9,10 @@ import NotificationSystem from "react-notification-system";
 const Search = () => {
   const [query, setQuery] = useState("");
   const [shoes, setShoes] = useState([]);
-  const [shoesClicked, setShoesClicked] = useState ([])
-  const [clickedBtn, setClickedBtn] = useState (false)
+  const [foundShoes, setFoundShoes] = useState([]);
   const notificationSystem = useRef();
- 
+  const myStorage = window.localStorage;
+
   //console.log(query);
   const handleChange = async (event) => {
     event.preventDefault();
@@ -21,51 +20,40 @@ const Search = () => {
     const apiUrl = `http://localhost:3000/api/trainer?q=${event.target.value}`;
     const response = await axios.get(apiUrl);
   
-    const myStorage = window.localStorage;
     let foundShoesArray = JSON.parse(myStorage.getItem("wishList"));
     if (foundShoesArray === null) {
       foundShoesArray = [];
     }
 
-    //updating array
+    //updating objects array
     const formattedShoes = response.data.shoes.map(shoe => {
        let inWishList = false 
        
       if (foundShoesArray.map(shoe => shoe._id).includes(shoe._id)) {
         inWishList = true
       }
-
       return {...shoe, inWishList}
     })
-
-
     setShoes(formattedShoes)
-    console.log(formattedShoes)
   };
 
   const handleAdd = (event) => {
-    //console.log(event.target.id);
+    
     let foundShoes = shoes.find((shoe) => event.target.id === shoe._id);
-      
-    //local storage variable
-    const myStorage = window.localStorage;
+  
 
     //get data from local stoarge and set to array
     let foundShoesArray = JSON.parse(myStorage.getItem("wishList"));
     if (foundShoesArray === null) {
       foundShoesArray = [];
     }
-    //console.log(foundShoes)
 
-    //set foundShoeArray(value) to wishList(key)
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
 
-    //store item in array
     foundShoesArray.push(foundShoes);
 
     myStorage.setItem("wishList", JSON.stringify(foundShoesArray));
-    //console.log(foundShoeArray);
-  
+    
     const notification = notificationSystem.current;
     notification.addNotification({
       message: `${foundShoes.name} was added to your wishlist`,
@@ -78,15 +66,42 @@ const Search = () => {
      if (foundShoesArray.map(shoe => shoe._id).includes(shoe._id)) {
        inWishList = true
      }
-
      return {...shoe, inWishList}
    })
-
    setShoes(formattedShoes)
-     
   };
-  
 
+  const handleRemove = (event) => {
+    //const myStorage = window.localStorage;
+    const wishList = JSON.parse(myStorage.getItem("wishList"));
+    let filteredShoes = wishList.filter(shoe => event.target.id !== shoe._id);
+      
+    //persit to local stoarge
+    myStorage.setItem("wishList", JSON.stringify(filteredShoes))
+
+    //update component state
+    setFoundShoes(filteredShoes);
+
+    let deletedShoe = wishList.find(shoe => event.target.id === shoe._id);
+    const notification = notificationSystem.current;
+    notification.addNotification({
+      message: `${deletedShoe.name} was removed from your wishlist`,
+      level: 'success'
+    });
+
+    const formattedShoes = shoes.map(shoe => {
+      let inWishList = false 
+      let foundShoesArray = JSON.parse(myStorage.getItem("wishList"));
+
+     if (foundShoesArray.map(shoe => shoe._id).includes(shoe._id)) {
+       inWishList = true
+     }
+     return {...shoe, inWishList}
+   })
+   setShoes(formattedShoes)
+
+  }
+  
   return(
     <div className="container">
       <div className="container">
@@ -117,18 +132,12 @@ const Search = () => {
                 </Card.Text>
                 <i class="fas fa-heart fa-2x" 
                 style={{color: shoe.inWishList ? "red" : "#4d4d4f"}}
-                onClick={handleAdd}
+                onClick={shoe.inWishList ? handleRemove : handleAdd} //tertiary: shoe.inWishList ? removeBtn(create function) : handleAdd
                 id={shoe._id}
                 ></i> 
               </Card.Body>
             </Card>
           ))} 
-        </div>
-        <div>
-        {/* {shoesClicked.map(shoe =>(
-              
-              <div key={shoe.id}>{shoe.value}</div>
-            ))} */}
         </div>
         <NotificationSystem ref={notificationSystem} />
       </div>

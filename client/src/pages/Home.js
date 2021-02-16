@@ -9,9 +9,6 @@ const Home = () => {
         <Link className="link" to="/sneakerSearch">
         <h3 className="homeSubTitle">Click <em>here</em> to start your search</h3>
       </Link>
-
-      
-      
     </div>
   );
 };
