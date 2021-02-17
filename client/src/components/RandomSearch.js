@@ -46,7 +46,7 @@ const RandomSearch = () => {
                                     {randomShoe.map((shoe) => (
                                         <Card className="randomShoe"  key={shoe._id} style={{width: "18rem", height: "17rem"}}>
                                         <Card.Body>
-                                            <Card.Title className="randomShoeInfoTitle">Shoe Info:</Card.Title>
+                                            <Card.Title className="randomShoeInfoTitle">Info:</Card.Title>
                                             <Card.Text className="randomShoeText">                                            
                                                 <p><b>Release Date:</b> {shoe.releaseDate}</p>
                                                 <p><b>Brand:</b> {shoe.brand}</p>

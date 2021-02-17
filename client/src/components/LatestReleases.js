@@ -78,7 +78,7 @@ const LatestReleases = () => {
                     <img src="https://cms-cdn.thesolesupplier.co.uk/2021/02/nike-air-max-zephyr-eoi-metallic-silver-bright-crimson_w900.jpg.webp" alt="Nike Air Max Zephyr EOI Metallic Silver" />
                 </div>
                 <div>
-                <p className="shoe-name">Nike Dunk High Footall Grey</p>
+                <p className="shoe-name">Nike Dunk High Football Grey</p>
                     <img src="https://cms-cdn.thesolesupplier.co.uk/2020/11/nike-dunk-high-football-grey-2_w900.jpg.webp" alt="Nike Dunk High Footall Grey"/>
                 </div>
                 <div>
