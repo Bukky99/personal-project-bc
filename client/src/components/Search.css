@@ -61,6 +61,9 @@ label {
   cursor: pointer
 }
 
-
-
+.btncontainer {
+  margin-left: 50%;
+  position: relative;
+  bottom: 35px
+}
 

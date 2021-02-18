@@ -1,7 +1,7 @@
 import "./Search.css";
 import axios from "axios";
 import React, { useState, useRef } from "react";
-import {Card } from "react-bootstrap";
+import {Card, Button } from "react-bootstrap";
 import {MDBInput, MDBCol} from "mdbreact"
 import NotificationSystem from "react-notification-system";
 
@@ -129,12 +129,21 @@ const Search = () => {
                       <p><b>Brand:</b> {shoe.brand}</p>
                       <p><b>Model:</b> {shoe.model} </p>
                       <p><b>Price:</b> {shoe.retailPrice.currencyCode} {shoe.retailPrice.amount}</p>
-                </Card.Text>
-                <i class="fas fa-heart fa-2x" 
-                style={{color: shoe.inWishList ? "red" : "#4d4d4f"}}
-                onClick={shoe.inWishList ? handleRemove : handleAdd} //tertiary: shoe.inWishList ? removeBtn(create function) : handleAdd
-                id={shoe._id}
-                ></i> 
+                </Card.Text> 
+                <div className="container" style={{marginTop: "15%"}}>               
+                  <i class="fas fa-heart fa-2x" 
+                  style={{color: shoe.inWishList ? "red" : "#4d4d4f"}}
+                  onClick={shoe.inWishList ? handleRemove : handleAdd} //tertiary: shoe.inWishList ? removeBtn(create function) : handleAdd
+                  id={shoe._id}
+                  ></i> 
+                  <div className="btncontainer">
+                    <p>
+                      <a href={shoe.website} rel="noreferrer" target="_blank">
+                          <Button className="buyBtn" variant="secondary" style={{backgroundColor: "#4d4d4f"}}><b>Buy now</b></Button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </Card.Body>
             </Card>
           ))} 
