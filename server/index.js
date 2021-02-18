@@ -13,8 +13,6 @@ mongoose.Promise = global.Promise;
 mongoose.connect(
   process.env.MONGODB_URI ||
     `mongodb://localhost:27017/black-codher-personal-project`,
-  // `mongodb+srv://Bukky99:<>@bukky-cluster1.cje8w.mongodb.net/black-codher-personal-project?retryWrites=true&w=majority`
-  //mongodb+srv://Bukky99:<password>@bukky-cluster1.cje8w.mongodb.net/test,   my own database that i need to connect to
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
