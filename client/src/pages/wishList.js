@@ -27,7 +27,6 @@ const WishList = () => {
   }
 //onclick remove info from input
   function handleClick(event) {
-    event.preventDefault();
     setEmail("");
     setDescription("");
     
