@@ -17,7 +17,7 @@ const Search = () => {
   const handleChange = async (event) => {
     event.preventDefault();
     setQuery(event.target.value);
-    const apiUrl = `http://localhost:3000/api/trainer?q=${event.target.value}`;
+    const apiUrl = `http://localhost:5000/api/trainer?q=${event.target.value}`;
     const response = await axios.get(apiUrl);
   
     let foundShoesArray = JSON.parse(myStorage.getItem("wishList"));

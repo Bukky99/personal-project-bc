@@ -8,7 +8,7 @@ const RandomSearch = () => {
 
     const handleClick = async (event) => {
         event.preventDefault();
-        const apiUrl = "http://localhost:3000/api/randomTrainer"
+        const apiUrl = "http://localhost:5000/api/randomTrainer"
         const result = await axios.get(apiUrl);
         setRandomShoe(result.data.shoe)
         console.log(result.data.shoe)
