@@ -33,11 +33,6 @@ require("./routes/requestsRoutes")(app);
 if (process.env.NODE_ENV === "production") {
   const path = require("path")
   app.use(express.static(path.resolve(__dirname, "build")));
-
-//   const path = require("path");
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "build", "public", "index.html"));
-//   });
 }
 
 // using an environment variable to grab port
