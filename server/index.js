@@ -39,25 +39,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-// app.get("/", function (req, res) {
-//   res.sendfile("server/build/index.html");
-// });
-
-// app.get("/static/css/2.76eaca0e.chunk.css", function (req, res) {
-//   res.sendfile("server/build/static/css/2.76eaca0e.chunk.css")
-// })
-// app.get("/static/css/main.ef9a1493.chunk.css", function (req, res) {
-//   res.sendfile("server/build/static/css/main.ef9a1493.chunk.css")
-// })
-// app.get("/static/js/2.71e4fac4.chunk.js", function (req, res) {
-//   res.sendfile("server/build/static/js/2.71e4fac4.chunk.js")
-// })
-// app.get("/static/js/main.38a37898.chunk.js", function (req, res) {
-//   res.sendfile("server/build/static/js/main.38a37898.chunk.js")
-// })
-// app.get("//manifest.json", function (req, res) {
-//   res.sendfile("server/build//manifest.json")
-// })
 
 // using an environment variable to grab port
 const PORT = process.env.PORT || 5000;
