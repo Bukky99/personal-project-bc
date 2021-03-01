@@ -31,14 +31,13 @@ app.use(bodyParser.json());
 require("./routes/trainersRoutes")(app);
 require("./routes/requestsRoutes")(app);
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static("build"));
 
-  const path = require("path");
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "build", "public", "index.html"));
-  });
+//   const path = require("path");
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "build", "public", "index.html"));
+//   });
 }
-
 
 // using an environment variable to grab port
 const PORT = process.env.PORT || 5000;
