@@ -31,7 +31,8 @@ app.use(bodyParser.json());
 require("./routes/trainersRoutes")(app);
 require("./routes/requestsRoutes")(app);
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"));
+  const path = require("path")
+  app.use(express.static(path.resolve(__dirname, "build")));
 
 //   const path = require("path");
 //   app.get("*", (req, res) => {
