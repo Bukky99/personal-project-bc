@@ -19,13 +19,17 @@ mongoose.connect(
   }
 );
 
+//verify mongoose has been connected
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose is connected')
+})
+
 app.use(cors());
 app.use(bodyParser.json());
 //this is old-fashioned
 // IMPORT YOUR ROUTES
 require("./routes/trainersRoutes")(app);
 require("./routes/requestsRoutes")(app);
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 

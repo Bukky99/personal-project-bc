@@ -34,4 +34,4 @@ const trainersSchema = new Schema({
   },
 });
 
-mongoose.model("trainers", trainersSchema);
+mongoose.model("sneakers", trainersSchema);
